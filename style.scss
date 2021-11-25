@@ -1,0 +1,263 @@
+/* GENERAL */
+
+body {
+    font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.header__logo,
+h1 {
+    font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+span {
+    font-size: 2rem;
+}
+
+.fas,
+.far {
+    font-size: 1.9rem;
+}
+
+/* HEADER */
+
+header {
+    height: 6rem;
+}
+
+.header__logo {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+/* SECTION POSITION */
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 6rem;
+    background: #eaeaea;
+    box-shadow: inset 1px 15px 14px -14px rgba(0, 0, 0, 0.3);
+}
+
+.fa-map-marker-alt {
+    margin-right: 30px;
+}
+
+/* SECTION RESERVER */
+
+.reserver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f6f6f6;
+    height: 36rem;
+}
+
+.reserver__title {
+    padding: 4.5rem 0 1.6rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+.reserver__text {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    margin-top: 4rem;
+    width: 28rem;
+    height: 6.3rem;
+    font-size: 1.9rem;
+    border-radius: 4rem;
+    border: none;
+    background-image: linear-gradient(355deg, #9356dc, #ff79da);
+    color: #fff;
+    font-weight: bold;
+}
+
+/* SECTION FONCTIONNEMENT */
+
+.fonctionnement_section {
+    padding: 5rem 2.5rem;
+}
+
+.fonctionnement__magnets {
+    width: 100%;
+    padding-left: 1rem;
+    gap: 10rem;
+}
+
+.fontionnement__magnet {
+    position: relative;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 9rem;
+    font-size: 1.9rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: bold;
+    background: #f6f6f6;
+    box-shadow: -3px 5px 30px -5px rgba(204, 204, 204, 0.99);
+    flex-grow: 1;
+}
+
+.fonctionnement__circle {
+    position: absolute;
+    top: 3rem;
+    left: -1.5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #9356dc;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+    position: absolute;
+    left: 5.5rem;
+    font-size: 2.6rem;
+    color: #7e7e7e;
+}
+
+/* SECTION RESTAURANTS */
+
+.restaurants__section {
+    width: 100%;
+    padding: 4rem 0 8rem 0;
+    background: #f6f6f6;
+}
+
+.restaurants__title {
+    padding-left: 2.5rem;
+}
+
+.restaurants__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.restaurants__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 670/504;
+    height: 504px;
+    background-color: white;
+    border: 0.347vw solid white;
+    border-radius: 40px;
+    box-shadow: 0.347vw 0.347vw 1.181vw 0.069vw #f2f2f2;
+    flex-grow: 1;
+}
+
+.restocard__h3 {
+    margin: 20px 0 10px 25px;
+}
+
+.restocard__p {
+    margin: 10px 0 10px 25px;
+}
+
+.restocard__img {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    overflow: hidden;
+}
+
+.restocard__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.restocard__details {
+    height: 37%;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+
+.fa-heart {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: #353535;
+    color: white;
+    padding: 3rem;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 0 0 30px 10px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0 auto;
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+}
+
+footer .fa-utensils {    
+    margin-right: 25px;
+    margin-left: 10px;
+
+}
+
+footer .fa-hands-helping {    
+    margin-right: 12px;
+    margin-left: 10px;
+}
+
+footer p {    
+    margin: 0.5rem;
+}
+
+footer a {
+    color: white;
+}
