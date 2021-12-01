@@ -1,4 +1,58 @@
+.restaurants__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reserver, .restaurants__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.position, .fonctionnement__magnet, .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* GENERAL */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
   margin: 0;
@@ -14,216 +68,208 @@ a {
 .header__logo,
 h1 {
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 3.5rem;
+  font-size: 7.467vw;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 6.4vw;
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 4.667vw;
 }
 
-p {
-  font-size: 2rem;
-}
-
+p,
 span {
-  font-size: 2rem;
+  font-size: 4.267vw;
 }
 
 .fas,
 .far {
-  font-size: 1.9rem;
+  font-size: 4vw;
 }
 
 /* HEADER */
 header {
-  height: 6rem;
+  height: 12.8vw;
 }
 
 .header__logo {
   text-align: center;
-  margin: 2rem 0 0 0;
+  margin: 4.267vw 0 0 0;
 }
 
 /* SECTION POSITION */
 .position {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 6rem;
+  height: 12.8vw;
   background: #eaeaea;
-  box-shadow: inset 1px 15px 14px -14px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0.133vw 2vw 1.867vw -1.867vw rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0.133vw 2vw 1.867vw -1.867vw rgba(0, 0, 0, 0.3);
 }
 
 .fa-map-marker-alt {
-  margin-right: 30px;
+  margin-right: 4vw;
 }
 
 /* SECTION RESERVER */
 .reserver {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #f6f6f6;
-  height: 36rem;
+  height: 76.8vw;
 }
 
 .reserver__title {
-  padding: 4.5rem 0 1.6rem 0;
+  padding: 9.6vw 0 3.467vw 0;
   margin: 0;
   text-align: center;
 }
 
 .reserver__text {
-  font-size: 2.2rem;
+  font-size: 4.667vw;
   text-align: center;
   margin: 0;
 }
 
 button {
-  margin-top: 4rem;
-  width: 28rem;
-  height: 6.3rem;
-  font-size: 1.9rem;
-  border-radius: 4rem;
+  margin-top: 8.533vw;
+  width: 59.733vw;
+  height: 14.133vw;
+  font-size: 4vw;
+  border-radius: 8.533vw;
   border: none;
-  background-image: linear-gradient(355deg, #9356dc, #ff79da);
+  background-image: linear-gradient(355deg, #9556dc, #ff79da);
   color: #fff;
   font-weight: bold;
 }
 
 /* SECTION FONCTIONNEMENT */
 .fonctionnement_section {
-  padding: 5rem 2.5rem;
+  padding: 10.667vw 5.333vw;
 }
 
 .fonctionnement__magnets {
   width: 100%;
-  padding-left: 1rem;
-  gap: 10rem;
+  padding-left: 2.133vw;
+  gap: 21.33vw;
 }
 
-.fontionnement__magnet {
+.fonctionnement__magnet {
   position: relative;
-  margin: 3rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 6.4vw 0;
   width: 98%;
-  height: 9rem;
-  font-size: 1.9rem;
-  border-radius: 3rem;
+  height: 19.2vw;
+  font-size: 4vw;
+  border-radius: 6.4vw;
   border: none;
   font-weight: bold;
   background: #f6f6f6;
-  box-shadow: -3px 5px 30px -5px rgba(204, 204, 204, 0.99);
-  flex-grow: 1;
+  -webkit-box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+          box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.fonctionnement__circle {
+.number {
   position: absolute;
-  top: 3rem;
-  left: -1.5rem;
-  height: 3rem;
-  width: 3rem;
+  height: 6.4vw;
+  width: 6.4vw;
+  color: white;
+  background-color: #9556dc;
   border-radius: 50%;
-  background: #9356dc;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: middle;
+  left: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  font-weight: normal;
 }
 
 .fa-mobile-alt,
 .fa-list-ul,
 .fa-store {
   position: absolute;
-  left: 5.5rem;
-  font-size: 2.6rem;
+  left: 11.733vw;
+  font-size: 5.6vw;
   color: #7e7e7e;
 }
 
 /* SECTION RESTAURANTS */
 .restaurants__section {
   width: 100%;
-  padding: 4rem 0 8rem 0;
+  padding: 8.533vw 0 17vw 0;
   background: #f6f6f6;
 }
 
 .restaurants__title {
-  padding-left: 2.5rem;
+  padding-left: 5.333vw;
 }
 
 .restaurants__cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
+  gap: 4vw;
 }
 
 .restaurants__card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   aspect-ratio: 670/504;
-  height: 504px;
+  height: 67.2vw;
   background-color: white;
-  border: 0.347vw solid white;
-  border-radius: 40px;
-  box-shadow: 0.347vw 0.347vw 1.181vw 0.069vw #f2f2f2;
-  flex-grow: 1;
+  border: none;
+  border-radius: 5.333vw;
+  -webkit-box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+          box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .restocard__h3 {
-  margin: 20px 0 10px 25px;
+  margin: 2.667vw 0 1.333vw 3.333vw;
 }
 
 .restocard__p {
-  margin: 10px 0 10px 25px;
+  margin: 1.333vw 0 1.333vw 3.333vw;
 }
 
 .restocard__img {
   height: 100%;
   width: 100%;
-  border-radius: 40px 40px 0 0;
+  border-radius: 5.333vw 5.333vw 0 0;
   overflow: hidden;
 }
 
 .restocard__img img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 .restocard__details {
   height: 37%;
-  flex-grow: 1;
-  margin: 10px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 1.333vw 0;
 }
 
 .fa-heart {
   position: absolute;
-  bottom: 60px;
-  right: 50px;
-  font-size: 3rem;
-  cursor: pointer;
+  bottom: 8vw;
+  right: 6.667vw;
+  font-size: 6.4vw;
 }
 
 /* FOOTER */
 footer {
   background: #353535;
   color: white;
-  padding: 3rem;
+  padding: 6.4vw;
 }
 
 footer h1 {
-  font-size: 2.5rem;
+  font-size: 5.333vw;
   font-weight: normal;
-  margin: 0 0 30px 10px;
+  margin: 0 0 4vw 1.333vw;
 }
 
 footer ul {
@@ -231,27 +277,23 @@ footer ul {
   margin: 0 auto;
 }
 
-footer li {
-  display: flex;
-  align-items: center;
-}
-
 footer .fa-utensils {
-  margin-right: 25px;
-  margin-left: 10px;
+  margin-right: 3.333vw;
+  margin-left: 1.333vw;
 }
 
 footer .fa-hands-helping {
-  margin-right: 12px;
-  margin-left: 10px;
+  margin-right: 1.6vw;
+  margin-left: 1.333vw;
 }
 
 footer p {
-  margin: 0.5rem;
+  margin: 0.067vwrem;
 }
 
 footer a {
   color: white;
 }
 
+/* A LA FRANCAISE */
 /*# sourceMappingURL=style.css.map */
