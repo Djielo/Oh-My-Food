@@ -1,5 +1,6 @@
 @import "sass/variables";
 @import "sass/placeholders";
+@import "sass/mixins";
 
 /* GENERAL */
 
@@ -79,18 +80,30 @@ header {
     @extend %df-fdc-aic;
     background: #f6f6f6;
     height: 76.8vw;
-}
 
-.reserver__title {
-    padding: 9.6vw 0 3.467vw 0;
-    margin: 0;
-    text-align: center;
-}
+    h2 {
+        padding: 9.6vw 0 3.467vw 0;
+        margin: 0;
+        text-align: center;
+    }
 
-.reserver__text {
-    font-size: 4.667vw;
-    text-align: center;
-    margin: 0;
+    p {
+        font-size: 4.667vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    button {
+        margin-top: 8.533vw;
+        width: 59.733vw;
+        height: 14.133vw;
+        font-size: 4vw;
+        border-radius: 8.533vw;
+        border: none;
+        background-image: linear-gradient(355deg, $primary, $secondary);
+        color: #fff;
+        font-weight: bold;
+    }
 }
 
 button {
@@ -133,7 +146,7 @@ button {
 }
 
 .number {
-    position: absolute;    
+    position: absolute;
     height: 6.4vw;
     width: 6.4vw;
     color: white;
@@ -217,47 +230,11 @@ button {
     bottom: 8vw;
     right: 6.667vw;
     font-size: 6.4vw;
+    @include heart;
 }
 
 /* FOOTER */
 
 footer {
-    background: #353535;
-    color: white;
-    padding: 6.4vw;
-
-    h1 {
-        font-size: 5.333vw;
-        font-weight: normal;
-        margin: 0 0 4vw 1.333vw;
-    }
-
-    ul {
-        padding: 0;
-        margin: 0 auto;
-    }
-
-    li {
-        @extend %df-aic;
-    }
-
-    .fa-utensils {
-        margin-right: 3.333vw;
-        margin-left: 1.333vw;
-    }
-
-    .fa-hands-helping {
-        margin-right: 1.6vw;
-        margin-left: 1.333vw;
-    }
-
-    p {
-        margin: 0.067vwrem;
-    }
-
-    a {
-        color: white;
-    }
+    @include footer;
 }
-
-/* A LA FRANCAISE */

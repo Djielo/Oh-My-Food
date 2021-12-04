@@ -1,0 +1,318 @@
+.restos__menu, .restos__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restos__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards__txt-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* GENERAL */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-transform: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.header__logo,
+h1 {
+  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 7.467vw;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 6.4vw;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 4.5vw;
+  font-weight: normal;
+}
+
+p,
+span {
+  font-size: 3.8vw;
+  font-weight: normal;
+}
+
+.fas,
+.far {
+  font-size: 4vw;
+}
+
+/* HEADER */
+.header-restos {
+  height: 16vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+}
+
+.header-restos .arrow-left {
+  position: absolute;
+  left: 4rem;
+  top: 4.5rem;
+}
+
+.header-restos .arrow-left .fas {
+  font-size: 5vw;
+}
+
+.header-restos h1 {
+  margin: 2.5rem 0;
+}
+
+/* MAIN */
+.restos__img {
+  display: block;
+}
+
+.restos__img img {
+  width: 100%;
+  max-height: 60rem;
+  /* z-index: 1; */
+  /* margin-bottom: -6.5rem; */
+  /* object-fit: cover; */
+}
+
+.restos__section {
+  background-color: #f6f6f6;
+  padding: 1rem 3rem 0rem 3rem;
+  margin-top: -10rem;
+  border-radius: 7.5rem 7.5rem 0 0;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.restos__section .restos__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.restos__section .restos__header h1 {
+  padding-left: 1rem;
+}
+
+.restos__section .restos__header .fa-heart {
+  font-weight: normal;
+  position: absolute;
+  top: 8vw;
+  right: 6.667vw;
+  font-size: 6.4vw;
+  cursor: pointer;
+  color: black;
+  font-weight: 100;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+}
+
+.restos__section .restos__header .fa-heart:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  font-weight: 300;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+}
+
+.restos__section .restos__header .fa-heart:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.restos__section .restos__header .fa-heart::after {
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+  font-weight: 900;
+  opacity: 0;
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+}
+
+.restos__menu {
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+
+.restos__serving {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.restos__serving::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background: #99e2d0;
+  -webkit-transform: translateY(180%);
+          transform: translateY(180%);
+}
+
+.cards__title h3 {
+  margin: 2rem 2rem 1.5rem 2rem;
+  font-weight: bold;
+}
+
+.restos__cards {
+  width: 100%;
+  height: 18vw;
+  border-radius: 4.4vw;
+  border: none;
+  -webkit-box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+          box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+}
+
+.cards__txt-price {
+  position: relative;
+}
+
+.cards__txt-price p {
+  font-size: 4.2vw;
+  margin: 0rem 2rem;
+}
+
+.cards__txt-price span {
+  font-weight: bold;
+  color: #424242;
+  position: absolute;
+  right: 4rem;
+}
+
+.restos__button button {
+  margin: 1rem 0 20vw 0vw;
+  width: 50vw;
+  height: 14.133vw;
+  font-size: 4vw;
+  border-radius: 8.533vw;
+  border: none;
+  background-image: linear-gradient(355deg, #9556dc, #ff79da);
+  color: #fff;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: #353535;
+  color: white;
+  padding: 6.4vw;
+}
+
+footer h1 {
+  font-size: 4.833vw;
+  font-weight: normal;
+  margin: 0 0 4vw 1.333vw;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+footer .fa-utensils {
+  margin-right: 3.333vw;
+  margin-left: 1.333vw;
+}
+
+footer .fa-hands-helping {
+  margin-right: 1.6vw;
+  margin-left: 1.333vw;
+}
+
+footer p {
+  margin: 1vw;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  font-size: 4.267vw;
+}
+/*# sourceMappingURL=restos.css.map */

@@ -1,0 +1,204 @@
+@import "sass/variables";
+@import "sass/placeholders";
+@import "sass/mixins";
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    font-weight: normal;
+}
+
+a {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.header__logo,
+h1 {
+    font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 7.467vw;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 6.4vw;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 4.5vw;
+    font-weight: normal;
+}
+
+p,
+span {
+    font-size: 3.8vw;
+    font-weight: normal;
+}
+
+.fas,
+.far {
+    font-size: 4vw;
+}
+
+/* HEADER */
+
+.header-restos {
+    height: 16vw;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+
+    .arrow-left {
+        position: absolute;
+        left: 4rem;
+        top: 4.5rem;
+
+        .fas {
+            font-size: 5vw;
+        }
+    }
+
+    h1 {
+        margin: 2.5rem 0;
+    }
+}
+
+/* MAIN */
+
+.restos__img {
+    display: block;
+    & img {
+        width: 100%;
+        max-height: 60rem;
+        /* z-index: 1; */
+        /* margin-bottom: -6.5rem; */
+        /* object-fit: cover; */
+    }
+}
+
+.restos__section {
+    background-color: #f6f6f6;
+    padding: 1rem 3rem 0rem 3rem;
+    margin-top: -10rem;
+    border-radius: 7.5rem 7.5rem 0 0;
+    position: relative;
+    /* z-index: 1; */
+
+    .restos__header {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        h1 {
+            padding-left: 1rem;
+        }
+
+        .fa-heart {
+            font-weight: normal;
+            position: absolute;
+            top: 8vw;
+            right: 6.667vw;
+            font-size: 6.4vw;
+            @include heart;
+        }
+    }
+}
+
+.restos__menu {
+    @extend %df-fdc;
+    gap: 3rem;
+    margin-bottom: 8rem;
+}
+
+.restos__serving {
+    margin: 0;
+    padding-left: 1rem;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 5px;
+        background: #99e2d0;
+        transform: translateY(180%);
+    }
+}
+
+.cards__title {
+    h3 {
+        margin: 2rem 2rem 1.5rem 2rem;
+        font-weight: bold;
+    }
+}
+
+.restos__cards {
+    @extend %df-fdc;
+    width: 100%;
+    height: 18vw;
+    border-radius: 4.4vw;
+    border: none;
+    box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+}
+
+.cards__txt-price {
+    @extend %df-jcsb-aic;
+    position: relative;
+
+    p {
+        font-size: 4.2vw;
+        margin: 0rem 2rem;
+    }
+
+    span {
+        font-weight: bold;
+        color: #424242;
+        position: absolute;
+        right: 4rem;
+    }
+}
+
+.restos__button {
+    @extend %df-jcc;
+
+    button {
+        margin: 1rem 0 20vw 0vw;
+        width: 50vw;
+        height: 14.133vw;
+        font-size: 4vw;
+        border-radius: 8.533vw;
+        border: none;
+        background-image: linear-gradient(355deg, $primary, $secondary);
+        color: #fff;
+        font-weight: bold;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    @include footer;
+
+    p {
+        font-size: 4.267vw;
+    }
+}

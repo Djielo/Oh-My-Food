@@ -11,6 +11,11 @@
     align-items: center;
 }
 
+%df-jcc {
+    display: flex;    
+    justify-content: center;
+}
+
 %df-fdc-jcc {
     display: flex;
     flex-direction: column;
@@ -23,15 +28,21 @@
     align-items: center;
 }
 
-%df-fdc-jcc-aic {
+%df-jcsb-aic {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 %df-jcc-aic {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%df-fdc-jcc-aic {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

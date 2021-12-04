@@ -1,0 +1,74 @@
+@mixin heart {
+    cursor: pointer;
+    color: black;
+    font-weight: 100;
+    transform-origin: center;
+    transition: opacity ease 0.4s;
+    &:hover {
+        transform: scale(1.01);
+        font-weight: 300;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient($primary, $secondary);
+        &::after {
+            opacity: 1;
+            transform: scale(1.01);
+        }
+    }
+    &::after {
+        content: "\f004";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform-origin: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-image: linear-gradient($primary, $secondary);
+        font-weight: 900;
+        opacity: 0;
+        transition: opacity ease 0.4s;
+    }
+}
+
+@mixin footer {
+    background: #353535;
+    color: white;
+    padding: 6.4vw;
+
+    h1 {
+        font-size: 4.833vw;
+        font-weight: normal;
+        margin: 0 0 4vw 1.333vw;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    li {
+        @extend %df-aic;
+    }
+
+    .fa-utensils {
+        margin-right: 3.333vw;
+        margin-left: 1.333vw;
+    }
+
+    .fa-hands-helping {
+        margin-right: 1.6vw;
+        margin-left: 1.333vw;
+    }
+
+    p {
+        margin: 1vw;
+    }
+
+    a {
+        color: white;
+    }
+}
