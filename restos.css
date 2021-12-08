@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .restos__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,13 +81,13 @@ h2 {
 }
 
 h3 {
-  font-size: 4.2vw;
+  font-size: 4.5vw;
   font-weight: normal;
 }
 
 p,
 span {
-  font-size: 3.6vw;
+  font-size: 3.9vw;
   font-weight: normal;
 }
 
@@ -112,8 +113,8 @@ span {
 
 .header-restos .arrow-left {
   position: absolute;
-  left: 4rem;
-  top: 4.5rem;
+  left: 5.333vw;
+  top: 6vw;
 }
 
 .header-restos .arrow-left .fas {
@@ -121,7 +122,7 @@ span {
 }
 
 .header-restos h1 {
-  margin: 2.5rem 0;
+  margin: 3.333vw 0;
 }
 
 /* MAIN */
@@ -131,7 +132,7 @@ span {
 
 .restos__img img {
   width: 100%;
-  max-height: 60rem;
+  max-height: 80vw;
   /* z-index: 1; */
   /* margin-bottom: -6.5rem; */
   /* object-fit: cover; */
@@ -139,9 +140,9 @@ span {
 
 .restos__section {
   background-color: #f6f6f6;
-  padding: 1rem 3rem 0rem 3rem;
-  margin-top: -10rem;
-  border-radius: 7.5rem 7.5rem 0 0;
+  padding: 1.333vw 4vw 0 4vw;
+  margin-top: -100px;
+  border-radius: 10vw 10vw 0 0;
   position: relative;
   /* z-index: 1; */
 }
@@ -160,7 +161,7 @@ span {
 }
 
 .restos__section .restos__header h1 {
-  padding-left: 1rem;
+  padding-left: 1.333vw;
 }
 
 .restos__section .restos__header .fa-heart {
@@ -216,60 +217,68 @@ span {
 }
 
 .restos__menu {
-  gap: 3rem;
-  margin-bottom: 8rem;
+  gap: 4vw;
+  margin-bottom: 10.667vw;
 }
 
 .restos__serving {
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 1.333vw;
 }
 
 .restos__serving::after {
   content: "";
   display: block;
-  width: 80px;
-  height: 5px;
+  width: 10.667vw;
+  height: 0.667vw;
   background: #99e2d0;
   -webkit-transform: translateY(180%);
           transform: translateY(180%);
 }
 
 .restos__cards {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   height: 18vw;
   border-radius: 4.4vw;
-  border: none;
   -webkit-box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
           box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .restos__cards .cards__title {
   width: 70%;
   height: 100%;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  margin-left: 2rem;
 }
 
 .restos__cards .cards__title h3 {
-  margin: 1rem;
+  margin: 1.333vw 3vw;
   font-weight: bold;
+  white-space: nowrap;
+  /*évite le retour à la ligne */
+  overflow: hidden;
+  /*efface le texte au fur et à mesure qu'on passe dessus*/
+  text-overflow: ellipsis;
+  /*fait apparaitre les ...*/
 }
 
 .restos__cards .cards__title p {
-  margin: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  margin: 1.333vw 3vw;
+  white-space: nowrap;
+  /*évite le retour à la ligne */
+  overflow: hidden;
+  /*efface le texte au fur et à mesure qu'on passe dessus*/
+  text-overflow: ellipsis;
+  /*fait apparaitre les ...*/
 }
 
 .restos__cards .cards__price-val {
@@ -278,13 +287,15 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: -80px;
+  margin-right: -10.667vw;
 }
 
-.restos__cards .cards__price-val span {
+.restos__cards .cards__price-val .cards__price {
   width: 50%;
   text-align: center;
-  padding-top: 8rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 10.667vw;
   font-weight: bold;
   color: #424242;
 }
@@ -335,8 +346,20 @@ span {
 
 @-webkit-keyframes animval {
   0% {
-    -webkit-transform: translate(80px);
-            transform: translate(80px);
+    -webkit-transform: translate(10.667vw);
+            transform: translate(10.667vw);
+  }
+  25% {
+    -webkit-transform: translate(8vw);
+            transform: translate(8vw);
+  }
+  50% {
+    -webkit-transform: translate(5.333vw);
+            transform: translate(5.333vw);
+  }
+  75% {
+    -webkit-transform: translate(2.667vw);
+            transform: translate(2.667vw);
   }
   100% {
     -webkit-transform: translate(0);
@@ -346,8 +369,20 @@ span {
 
 @keyframes animval {
   0% {
-    -webkit-transform: translate(80px);
-            transform: translate(80px);
+    -webkit-transform: translate(10.667vw);
+            transform: translate(10.667vw);
+  }
+  25% {
+    -webkit-transform: translate(8vw);
+            transform: translate(8vw);
+  }
+  50% {
+    -webkit-transform: translate(5.333vw);
+            transform: translate(5.333vw);
+  }
+  75% {
+    -webkit-transform: translate(2.667vw);
+            transform: translate(2.667vw);
   }
   100% {
     -webkit-transform: translate(0);
