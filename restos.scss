@@ -98,7 +98,7 @@ span {
 .restos__section {
     background-color: #f6f6f6;
     padding: 1.333vw 4vw 0 4vw;
-    margin-top: -100px;
+    margin-top: -13.333vw;
     border-radius: 10vw 10vw 0 0;
     position: relative;
     /* z-index: 1; */
@@ -153,46 +153,43 @@ span {
     border-radius: 4.4vw;
     box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: hidden;   
+
+    &:hover {
+        cursor: pointer;
+    }
 
     .cards__title {
-        @extend %df-fdc-jcc;
-        width: 70%;
         height: 100%;
+        white-space: nowrap; /*évite le retour à la ligne */
+        overflow: hidden;
 
         h3 {
-            margin: 1.333vw 3vw;
+            margin: 3vw 0 0 3vw;
             font-weight: bold;
-            white-space: nowrap; /*évite le retour à la ligne */
             overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
             text-overflow: ellipsis; /*fait apparaitre les ...*/
         }
         p {
-            margin: 1.333vw 3vw;
-            white-space: nowrap; /*évite le retour à la ligne */
+            margin: 1vw 0 0 3vw;
             overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
             text-overflow: ellipsis; /*fait apparaitre les ...*/
         }
     }
 
-    .cards__price-val {
-        width: 30%;
-        height: 100%;
-        display: flex;
-        margin-right: -10.667vw;
+    .cards__price {
+        text-align: center;
+        flex-shrink: 0;
+        width: 16vw;
+        padding-top: 9.667vw;
 
-        .cards__price {
-            width: 50%;
-            text-align: center;
-            flex-shrink: 0;
-            padding-top: 10.667vw;
+        span {
             font-weight: bold;
             color: #424242;
         }
     }
 
-    &:hover .cards__price-val {
-        margin-right: 0;
+    &:hover .cards__price {
         animation-name: animval;
         animation-duration: 0.3s;
         animation-timing-function: linear;
@@ -205,18 +202,31 @@ span {
         justify-content: center;
         align-items: center;
         height: 100%;
-        width: 50%;
+        width: 16vw;
         border-radius: 0 4.4vw 4.4vw 0;
         background: #99e2d0;
         color: white;
         display: none;
+
+        .fa-check-circle {
+            font-size: 6vw;           
+        }
     }
 
     &:hover .cards__validation {
         display: flex;
         justify-content: center;
-        align-items: center;
+        animation-name: animval;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-delay: 0;
+        animation-iteration-count: 1;
     }
+}
+
+.restos__cards:hover .rotate {
+    transition: transform 0.5s;
+    transform: rotate(360deg);
 }
 
 @keyframes animval {

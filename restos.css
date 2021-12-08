@@ -27,19 +27,6 @@ footer li {
           justify-content: center;
 }
 
-.restos__cards .cards__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 /* GENERAL */
 * {
   -webkit-box-sizing: border-box;
@@ -141,7 +128,7 @@ span {
 .restos__section {
   background-color: #f6f6f6;
   padding: 1.333vw 4vw 0 4vw;
-  margin-top: -100px;
+  margin-top: -13.333vw;
   border-radius: 10vw 10vw 0 0;
   position: relative;
   /* z-index: 1; */
@@ -255,16 +242,20 @@ span {
   overflow: hidden;
 }
 
+.restos__cards:hover {
+  cursor: pointer;
+}
+
 .restos__cards .cards__title {
-  width: 70%;
   height: 100%;
+  white-space: nowrap;
+  /*évite le retour à la ligne */
+  overflow: hidden;
 }
 
 .restos__cards .cards__title h3 {
-  margin: 1.333vw 3vw;
+  margin: 3vw 0 0 3vw;
   font-weight: bold;
-  white-space: nowrap;
-  /*évite le retour à la ligne */
   overflow: hidden;
   /*efface le texte au fur et à mesure qu'on passe dessus*/
   text-overflow: ellipsis;
@@ -272,36 +263,27 @@ span {
 }
 
 .restos__cards .cards__title p {
-  margin: 1.333vw 3vw;
-  white-space: nowrap;
-  /*évite le retour à la ligne */
+  margin: 1vw 0 0 3vw;
   overflow: hidden;
   /*efface le texte au fur et à mesure qu'on passe dessus*/
   text-overflow: ellipsis;
   /*fait apparaitre les ...*/
 }
 
-.restos__cards .cards__price-val {
-  width: 30%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: -10.667vw;
-}
-
-.restos__cards .cards__price-val .cards__price {
-  width: 50%;
+.restos__cards .cards__price {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding-top: 10.667vw;
+  width: 16vw;
+  padding-top: 9.667vw;
+}
+
+.restos__cards .cards__price span {
   font-weight: bold;
   color: #424242;
 }
 
-.restos__cards:hover .cards__price-val {
-  margin-right: 0;
+.restos__cards:hover .cards__price {
   -webkit-animation-name: animval;
           animation-name: animval;
   -webkit-animation-duration: 0.3s;
@@ -325,11 +307,15 @@ span {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  width: 50%;
+  width: 16vw;
   border-radius: 0 4.4vw 4.4vw 0;
   background: #99e2d0;
   color: white;
   display: none;
+}
+
+.restos__cards .cards__validation .fa-check-circle {
+  font-size: 6vw;
 }
 
 .restos__cards:hover .cards__validation {
@@ -339,9 +325,25 @@ span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-animation-name: animval;
+          animation-name: animval;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.restos__cards:hover .rotate {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 @-webkit-keyframes animval {
