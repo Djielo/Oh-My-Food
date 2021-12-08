@@ -43,13 +43,13 @@ h2 {
 }
 
 h3 {
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     font-weight: normal;
 }
 
 p,
 span {
-    font-size: 3.8vw;
+    font-size: 3.6vw;
     font-weight: normal;
 }
 
@@ -144,36 +144,82 @@ span {
     }
 }
 
-.cards__title {
-    h3 {
-        margin: 2rem 2rem 1.5rem 2rem;
-        font-weight: bold;
-    }
-}
-
 .restos__cards {
-    @extend %df-fdc;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 18vw;
     border-radius: 4.4vw;
     border: none;
     box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
-}
 
-.cards__txt-price {
-    @extend %df-jcsb-aic;
-    position: relative;
+    .cards__title {
+        @extend %df-fdc-jcc;
+        width: 70%;
+        height: 100%;
+        flex-wrap: no-wrap;
+        margin-left: 2rem;
 
-    p {
-        font-size: 4.2vw;
-        margin: 0rem 2rem;
+        h3 {
+            margin: 1rem;
+            font-weight: bold;
+        }
+        p {
+            margin: 1rem;
+            display: flex;
+            flex-wrap: nowrap;
+        }
     }
 
-    span {
-        font-weight: bold;
-        color: #424242;
-        position: absolute;
-        right: 4rem;
+    .cards__price-val {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        margin-right: -80px;
+
+        span {
+            width: 50%;
+            text-align: center;
+            padding-top: 8rem;
+            font-weight: bold;
+            color: #424242;
+        }
+    }
+
+    &:hover .cards__price-val {
+        margin-right: 0;
+        animation-name: animval;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-delay: 0;
+        animation-iteration-count: 1;
+    }
+
+    .cards__validation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        border-radius: 0 4.4vw 4.4vw 0;
+        background: #99e2d0;
+        color: white;
+        display: none;
+    }
+
+    &:hover .cards__validation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes animval {
+    0% {
+        transform: translate(80px);
+    }
+    100% {
+        transform: translate(0);
     }
 }
 
