@@ -145,7 +145,6 @@ span {
 }
 
 .restos__cards {
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -160,7 +159,7 @@ span {
     }
 
     .cards__title {
-        height: 100%;
+        width: 70vw;
         white-space: nowrap; /*évite le retour à la ligne */
         overflow: hidden;
 
@@ -180,6 +179,8 @@ span {
     .cards__price {
         text-align: center;
         flex-shrink: 0;
+        margin-right: -0px;
+        transition-duration: 1s;
         width: 16vw;
         padding-top: 9.667vw;
 
@@ -189,62 +190,31 @@ span {
         }
     }
 
-    &:hover .cards__price {
-        animation-name: animval;
-        animation-duration: 0.3s;
-        animation-timing-function: linear;
-        animation-delay: 0;
-        animation-iteration-count: 1;
-    }
-
     .cards__validation {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        flex-shrink: 0;
+        margin-right: -160px;
+        transition-duration: 1s;
         width: 16vw;
-        border-radius: 0 4.4vw 4.4vw 0;
         background: #99e2d0;
         color: white;
-        display: none;
-
-        .fa-check-circle {
-            font-size: 6vw;
-        }
     }
 
     &:hover .cards__validation {
-        display: flex;
-        justify-content: center;
-        animation-name: animval;
-        animation-duration: 0.3s;
-        animation-timing-function: linear;
-        animation-delay: 0;
-        animation-iteration-count: 1;
+        transition-duration: 1s;
+        margin-right: 0px;
     }
 }
 
-.restos__cards:hover .rotate {
-    transition: transform 0.5s;
-    transform: rotate(360deg);
+.fa-check-circle {
+    font-size: 5vw;
+    transition: transform 1s;
 }
 
-@keyframes animval {
-    0% {
-        transform: translate(10.667vw);
-    }
-    25% {
-        transform: translate(8vw);
-    }
-    50% {
-        transform: translate(5.333vw);
-    }
-    75% {
-        transform: translate(2.667vw);
-    }
-    100% {
-        transform: translate(0);
-    }
+.restos__cards:hover .fa-check-circle {
+    transform: rotate(-360deg);
 }
 
 .restos__button {

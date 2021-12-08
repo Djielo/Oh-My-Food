@@ -224,7 +224,6 @@ span {
 }
 
 .restos__cards {
-  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,7 +246,7 @@ span {
 }
 
 .restos__cards .cards__title {
-  height: 100%;
+  width: 70vw;
   white-space: nowrap;
   /*évite le retour à la ligne */
   overflow: hidden;
@@ -274,6 +273,9 @@ span {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-right: -0px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   width: 16vw;
   padding-top: 9.667vw;
 }
@@ -281,19 +283,6 @@ span {
 .restos__cards .cards__price span {
   font-weight: bold;
   color: #424242;
-}
-
-.restos__cards:hover .cards__price {
-  -webkit-animation-name: animval;
-          animation-name: animval;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
 }
 
 .restos__cards .cards__validation {
@@ -306,90 +295,33 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: -160px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
   width: 16vw;
-  border-radius: 0 4.4vw 4.4vw 0;
   background: #99e2d0;
   color: white;
-  display: none;
-}
-
-.restos__cards .cards__validation .fa-check-circle {
-  font-size: 6vw;
 }
 
 .restos__cards:hover .cards__validation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-animation-name: animval;
-          animation-name: animval;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0;
-          animation-delay: 0;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  margin-right: 0px;
 }
 
-.restos__cards:hover .rotate {
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+.fa-check-circle {
+  font-size: 5vw;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-@-webkit-keyframes animval {
-  0% {
-    -webkit-transform: translate(10.667vw);
-            transform: translate(10.667vw);
-  }
-  25% {
-    -webkit-transform: translate(8vw);
-            transform: translate(8vw);
-  }
-  50% {
-    -webkit-transform: translate(5.333vw);
-            transform: translate(5.333vw);
-  }
-  75% {
-    -webkit-transform: translate(2.667vw);
-            transform: translate(2.667vw);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes animval {
-  0% {
-    -webkit-transform: translate(10.667vw);
-            transform: translate(10.667vw);
-  }
-  25% {
-    -webkit-transform: translate(8vw);
-            transform: translate(8vw);
-  }
-  50% {
-    -webkit-transform: translate(5.333vw);
-            transform: translate(5.333vw);
-  }
-  75% {
-    -webkit-transform: translate(2.667vw);
-            transform: translate(2.667vw);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
+.restos__cards:hover .fa-check-circle {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .restos__button button {
