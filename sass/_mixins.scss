@@ -73,7 +73,7 @@
     }
 }
 
-@mixin btn-first {    
+@mixin btn-first {
     width: 59.733vw;
     height: 14.133vw;
     font-size: 4vw;
@@ -84,6 +84,6 @@
     font-weight: bold;
 
     &:hover {
-        opacity: .9;
+        opacity: 0.9;
     }
 }

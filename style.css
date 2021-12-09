@@ -143,11 +143,11 @@ header {
 }
 
 .reserver .btn-first:hover {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /* SECTION FONCTIONNEMENT */
-.fonctionnement_section {
+.fonctionnement__section {
   padding: 10.667vw 5.333vw;
 }
 
@@ -172,6 +172,14 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.fonctionnement__magnet:hover {
+  background-color: #fff3fc;
+}
+
+.fonctionnement__magnet:hover .fas {
+  color: #9556dc;
 }
 
 .number {
