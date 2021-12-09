@@ -1,0 +1,78 @@
+@-webkit-keyframes slideup {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  from {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideup-left {
+  from {
+    -webkit-transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup-left {
+  from {
+    -webkit-transform: translate(-100px, 100px);
+            transform: translate(-100px, 100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideup-right {
+  from {
+    -webkit-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup-right {
+  from {
+    -webkit-transform: translate(100px, 100px);
+            transform: translate(100px, 100px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=keyframes.css.map */

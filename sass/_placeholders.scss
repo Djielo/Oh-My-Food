@@ -16,6 +16,11 @@
     justify-content: center;
 }
 
+%df-jcsb {
+    display: flex;    
+    justify-content: space-between;
+}
+
 %df-fdc-jcc {
     display: flex;
     flex-direction: column;

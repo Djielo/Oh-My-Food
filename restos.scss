@@ -1,6 +1,7 @@
 @import "sass/variables";
 @import "sass/placeholders";
 @import "sass/mixins";
+@import "sass/keyframes";
 
 /* GENERAL */
 
@@ -89,9 +90,8 @@ span {
     & img {
         width: 100%;
         max-height: 80vw;
-        /* z-index: 1; */
-        /* margin-bottom: -6.5rem; */
-        /* object-fit: cover; */
+        /* z-index: 1; */        
+        object-fit: cover;
     }
 }
 
@@ -145,8 +145,7 @@ span {
 }
 
 .restos__cards {
-    display: flex;
-    justify-content: space-between;
+    @extend %df-jcsb;
     flex-grow: 1;
     height: 18vw;
     border-radius: 4.4vw;
@@ -179,8 +178,6 @@ span {
     .cards__price {
         text-align: center;
         flex-shrink: 0;
-        margin-right: -0px;
-        transition-duration: 1s;
         width: 16vw;
         padding-top: 9.667vw;
 
@@ -191,12 +188,9 @@ span {
     }
 
     .cards__validation {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %df-jcc-aic;
         flex-shrink: 0;
-        margin-right: -160px;
-        transition-duration: 1s;
+        margin-right: -21.333vw;
         width: 16vw;
         background: #99e2d0;
         color: white;
@@ -204,12 +198,24 @@ span {
 
     &:hover .cards__validation {
         transition-duration: 1s;
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 
+.slideup {
+    animation: slideup 1.5s ease;
+}
+
+.slideup-left {
+    animation: slideup-left 1.5s ease;
+}
+
+.slideup-right {
+    animation: slideup-right 1.5s ease;
+}
+
 .fa-check-circle {
-    font-size: 5vw;
+    font-size: 5.3vw;
     transition: transform 1s;
 }
 
@@ -220,16 +226,10 @@ span {
 .restos__button {
     @extend %df-jcc;
 
-    button {
-        margin: 1rem 0 20vw 0vw;
-        width: 50vw;
-        height: 14.133vw;
-        font-size: 4vw;
-        border-radius: 8.533vw;
-        border: none;
-        background-image: linear-gradient(355deg, $primary, $secondary);
-        color: #fff;
-        font-weight: bold;
+    .btn-first {
+        z-index: 1;
+        margin-bottom: 22vw;
+        @include btn-first;
     }
 }
 
