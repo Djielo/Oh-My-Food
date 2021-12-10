@@ -7,17 +7,17 @@
 }
 
 %df-aic {
-    display: flex;    
+    display: flex;
     align-items: center;
 }
 
 %df-jcc {
-    display: flex;    
+    display: flex;
     justify-content: center;
 }
 
 %df-jcsb {
-    display: flex;    
+    display: flex;
     justify-content: space-between;
 }
 
@@ -41,6 +41,13 @@
 
 %df-jcc-aic {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%df-fdc-jcc-aic {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

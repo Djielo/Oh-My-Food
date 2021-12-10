@@ -1,0 +1,394 @@
+@media only screen and (min-width: 751px) {
+  .restocard__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fonctionnement__magnets, .restaurants__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fonctionnement__magnets, .restaurants__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restocard__details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fonctionnement__magnets, .restaurants__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fonctionnement__magnets, .restaurants__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /* ANIMATIONS SUR CARDS */
+  @-webkit-keyframes slideup {
+    from {
+      -webkit-transform: translateY(5vw);
+              transform: translateY(5vw);
+      opacity: 0.5;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideup {
+    from {
+      -webkit-transform: translateY(5vw);
+              transform: translateY(5vw);
+      opacity: 0.5;
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slideup-left {
+    from {
+      -webkit-transform: translate(-10vw, 10vw);
+              transform: translate(-10vw, 10vw);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideup-left {
+    from {
+      -webkit-transform: translate(-10vw, 10vw);
+              transform: translate(-10vw, 10vw);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slideup-right {
+    from {
+      -webkit-transform: translate(10vw, 10vw);
+              transform: translate(10vw, 10vw);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideup-right {
+    from {
+      -webkit-transform: translate(10vw, 10vw);
+              transform: translate(10vw, 10vw);
+      opacity: 0;
+    }
+    to {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+      opacity: 1;
+    }
+  }
+  /* ANIMATION LOADER */
+  @-webkit-keyframes wait {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @keyframes wait {
+    0% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes scale {
+    0% {
+      color: #99e2d0;
+      text-shadow: 0 0 0.7vw #9556dc;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform: scale(1.8);
+              transform: scale(1.8);
+    }
+    50% {
+      color: #ff79da;
+      text-shadow: 0 0 0.7vw #99e2d0;
+      -webkit-transform: translateY(-1.5vw);
+              transform: translateY(-1.5vw);
+    }
+    100% {
+      color: #9556dc;
+      text-shadow: 0 0 0.7vw #ff79da;
+    }
+  }
+  @keyframes scale {
+    0% {
+      color: #99e2d0;
+      text-shadow: 0 0 0.7vw #9556dc;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-transform: scale(1.8);
+              transform: scale(1.8);
+    }
+    50% {
+      color: #ff79da;
+      text-shadow: 0 0 0.7vw #99e2d0;
+      -webkit-transform: translateY(-1.5vw);
+              transform: translateY(-1.5vw);
+    }
+    100% {
+      color: #9556dc;
+      text-shadow: 0 0 0.7vw #ff79da;
+    }
+  }
+  /* GENERAL */
+  .header__logo,
+  h1 {
+    font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-size: 4.467vw;
+  }
+  h2 {
+    font-size: 2.8vw;
+  }
+  h3 {
+    font-size: 2.4vw;
+  }
+  p,
+  span {
+    font-size: 2.2vw;
+  }
+  .fas,
+  .far {
+    font-size: 2vw;
+  }
+  /* HEADER */
+  header {
+    height: 8.8vw;
+  }
+  .header__logo {
+    text-align: center;
+    margin: 2vw 0 0 0;
+  }
+  /* MAIN */
+  /* SECTION POSITION */
+  .position {
+    height: 6.8vw;
+  }
+  .fa-map-marker-alt {
+    margin-right: 2vw;
+  }
+  /* SECTION RESERVER */
+  .reserver {
+    height: auto;
+  }
+  .reserver h2 {
+    padding: 4vw 0 3.467vw 0;
+  }
+  .reserver p {
+    font-size: 2vw;
+    width: 80vw;
+  }
+  .reserver .btn-first {
+    margin: 4.6vw 0 4.6vw 0;
+  }
+  /* SECTION FONCTIONNEMENT */
+  .fonctionnement__section {
+    padding: 4vw;
+    height: auto;
+  }
+  .fonctionnement__title {
+    text-align: center;
+    margin: 0;
+  }
+  .fonctionnement__magnets {
+    width: 100%;
+    padding: 4vw 0 0 0;
+    gap: 2vw;
+  }
+  .fonctionnement__magnet {
+    margin: 0;
+    width: 40%;
+    height: 8vw;
+    border-radius: 3vw;
+  }
+  .fonctionnement__magnet .step {
+    font-size: 2.2vw;
+    padding-left: 4vw;
+  }
+  .number {
+    height: 3vw;
+    width: 3vw;
+    font-size: 1.6vw;
+  }
+  .fa-mobile-alt,
+  .fa-list-ul,
+  .fa-store {
+    left: 4vw;
+    font-size: 2.8vw;
+  }
+  /* SECTION RESTAURANTS */
+  .restaurants__section {
+    padding: 4vw;
+  }
+  .restaurants__title {
+    padding: 0;
+    margin: 0 0 4vw 0;
+  }
+  .restaurants__cards {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 3vw;
+  }
+  .restaurants__card {
+    height: 25.2vw;
+    border-radius: 4.333vw;
+  }
+  .restocard__h3 {
+    margin: 0 0 0.8vw 3.333vw;
+  }
+  .restocard__p {
+    margin: 0 0 0 3.333vw;
+  }
+  .restocard__img {
+    border-radius: 4.333vw 4.333vw 0 0;
+  }
+  .restocard__details {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin: 1.6vw 0;
+  }
+  .fa-heart {
+    bottom: 2vw;
+    right: 4vw;
+    font-size: 3vw;
+  }
+  /* FOOTER == Idem Mobile */
+  /* LOADER == Idem Mobile */
+}
+
+@media only screen and (min-width: 992px) {
+  /* SECTION FONCTIONNEMENT */
+  .fonctionnement__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4vw;
+    height: auto;
+  }
+  .fonctionnement__section .fonctionnement__magnets {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 4vw 0 0 0;
+    gap: 2vw;
+  }
+  .fonctionnement__section .fonctionnement__magnet {
+    margin: 0;
+    width: 32%;
+    height: 8vw;
+    border-radius: 3vw;
+  }
+  .fonctionnement__section .fonctionnement__magnet .step {
+    font-size: 2vw;
+    padding-left: 4vw;
+  }
+  .fonctionnement__section .number {
+    height: 3vw;
+    width: 3vw;
+    font-size: 1.6vw;
+  }
+  .fonctionnement__section .fa-mobile-alt,
+  .fonctionnement__section .fa-list-ul,
+  .fonctionnement__section .fa-store {
+    left: 2.6vw;
+    font-size: 2.5vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

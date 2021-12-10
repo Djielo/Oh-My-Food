@@ -1,6 +1,10 @@
+@import "../sass/variables";
+
+/* ANIMATIONS SUR CARDS */
+
 @keyframes slideup {
     from {
-        transform: translateY(50px);
+        transform: translateY(5vw);
         opacity: 0.5;
     }
     to {
@@ -11,7 +15,7 @@
 
 @keyframes slideup-left {
     from {
-        transform: translate(-100px, 100px);
+        transform: translate(-10vw, 10vw);
         opacity: 0;
     }
     to {
@@ -22,11 +26,42 @@
 
 @keyframes slideup-right {
     from {
-        transform: translate(100px, 100px);
+        transform: translate(10vw, 10vw);
         opacity: 0;
     }
     to {
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+/* ANIMATION LOADER */
+
+@keyframes wait {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes scale {
+    0% {
+        color: $tertiary;
+        text-shadow: 0 0 0.7vw $primary;
+        transform: translateY(0);
+        transform: scale(1.8);
+    }
+
+    50% {
+        color: $secondary;
+        text-shadow: 0 0 0.7vw $tertiary;
+        transform: translateY(-1.5vw);
+    }
+
+    100% {
+        color: $primary;
+        text-shadow: 0 0 0.7vw $secondary;
     }
 }

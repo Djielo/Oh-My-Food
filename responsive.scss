@@ -1,0 +1,215 @@
+@media only screen and (min-width: 751px) {
+    @import "sass/variables";
+    @import "sass/placeholders";
+    @import "sass/mixins";
+    @import "sass/keyframes";
+
+    /* GENERAL */
+
+    .header__logo,
+    h1 {
+        font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+        font-size: 4.467vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+    }
+
+    p,
+    span {
+        font-size: 2.2vw;
+    }
+
+    .fas,
+    .far {
+        font-size: 2vw;
+    }
+
+    /* HEADER */
+
+    header {
+        height: 8.8vw;
+    }
+
+    .header__logo {
+        text-align: center;
+        margin: 2vw 0 0 0;
+    }
+
+    /* MAIN */
+    /* SECTION POSITION */
+
+    .position {
+        height: 6.8vw;
+    }
+
+    .fa-map-marker-alt {
+        margin-right: 2vw;
+    }
+
+    /* SECTION RESERVER */
+
+    .reserver {
+        height: auto;
+
+        h2 {
+            padding: 4vw 0 3.467vw 0;
+        }
+
+        p {
+            font-size: 2vw;
+            width: 80vw;
+        }
+
+        .btn-first {
+            margin: 4.6vw 0 4.6vw 0;
+        }
+    }
+
+    /* SECTION FONCTIONNEMENT */
+
+    .fonctionnement__section {
+        padding: 4vw;
+        height: auto;
+    }
+
+    .fonctionnement__title {
+        text-align: center;
+        margin: 0;
+    }
+
+    .fonctionnement__magnets {
+        @extend %df-fdc-jcc-aic;
+        width: 100%;
+        padding: 4vw 0 0 0;
+        gap: 2vw;
+    }
+
+    .fonctionnement__magnet {
+        margin: 0;
+        width: 40%;
+        height: 8vw;
+        border-radius: 3vw;
+
+        .step {
+            font-size: 2.2vw;
+            padding-left: 4vw;
+        }
+    }
+
+    .number {
+        height: 3vw;
+        width: 3vw;
+        font-size: 1.6vw;
+    }
+
+    .fa-mobile-alt,
+    .fa-list-ul,
+    .fa-store {
+        left: 4vw;
+        font-size: 2.8vw;
+    }
+
+    /* SECTION RESTAURANTS */
+
+    .restaurants__section {
+        @extend %df-fdc-jcc-aic;
+        padding: 4vw;
+    }
+
+    .restaurants__title {
+        padding: 0;
+        margin: 0 0 4vw 0;
+    }
+
+    .restaurants__cards {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3vw;
+    }
+
+    .restaurants__card {
+        height: 25.2vw;
+        border-radius: 4.333vw;
+    }
+
+    .restocard__h3 {
+        margin: 0 0 0.8vw 3.333vw;
+    }
+
+    .restocard__p {
+        margin: 0 0 0 3.333vw;
+    }
+
+    .restocard__img {
+        border-radius: 4.333vw 4.333vw 0 0;
+    }
+
+    .restocard__details {
+        @extend %df-fdc;
+        height: max-content;
+        margin: 1.6vw 0;
+    }
+
+    .fa-heart {
+        bottom: 2vw;
+        right: 4vw;
+        font-size: 3vw;
+    }
+
+    /* FOOTER == Idem Mobile */
+
+    /* LOADER == Idem Mobile */
+}
+
+@media only screen and (min-width: 992px) {
+    /* SECTION FONCTIONNEMENT */
+
+    .fonctionnement__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4vw;
+        height: auto;
+
+        .fonctionnement__magnets {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 4vw 0 0 0;
+            gap: 2vw;
+        }
+
+        .fonctionnement__magnet {
+            margin: 0;
+            width: 32%;
+            height: 8vw;
+            border-radius: 3vw;
+
+            .step {
+                font-size: 2vw;
+                padding-left: 4vw;
+            }
+        }
+
+        .number {
+            height: 3vw;
+            width: 3vw;
+            font-size: 1.6vw;
+        }
+
+        .fa-mobile-alt,
+        .fa-list-ul,
+        .fa-store {
+            left: 2.6vw;
+            font-size: 2.5vw;
+        }
+    }
+}
