@@ -622,14 +622,14 @@ footer a {
   width: 100%;
   height: 100%;
   -webkit-animation: wait 5s 3s infinite;
-          animation: wait 5s 3s infinite;
+  animation: wait 5s 3s infinite;
 }
 
 .loader {
   width: 15vw;
   height: 15vw;
   -webkit-animation-name: wait;
-          animation-name: wait;
+  animation-name: wait;
 }
 
 .letter {
@@ -637,46 +637,46 @@ footer a {
   font-weight: normal;
   color: #99e2d0;
   -webkit-animation: scale 1.4s linear infinite;
-          animation: scale 1.4s linear infinite;
+  animation: scale 1.4s linear infinite;
 }
 
 .letter:nth-child(1) {
   -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 
 .letter:nth-child(2) {
   -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .letter:nth-child(3) {
   -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 
 .letter:nth-child(4) {
   -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .letter:nth-child(5) {
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .letter:nth-child(6) {
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 .letter:nth-child(7) {
   -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 .letter:nth-child(8) {
   -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 /*# sourceMappingURL=style.css.map */

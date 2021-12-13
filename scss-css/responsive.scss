@@ -166,6 +166,8 @@
     .restocard__details {
         display: flex;
         flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
         margin: 1.6vw 0;
     }
@@ -332,6 +334,8 @@
     .restocard__details {
         display: flex;
         flex-direction: column;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
         margin: 0.6vw 0;
     }
