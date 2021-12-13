@@ -510,7 +510,7 @@
   }
   .restos__title .restos__header .fa-heart {
     top: 3vw;
-    right: 6vw;
+    right: 8vw;
     font-size: 3.5vw;
   }
   .restos__menu-section {
@@ -531,7 +531,7 @@
     font-size: 2vw;
   }
   .restos__serving::after {
-    width: 5.8vw;
+    width: 4.8vw;
     height: 0.567vw;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
@@ -609,7 +609,7 @@
     margin-top: 1vw;
   }
   .restos__title .restos__header .fa-heart {
-    top: 1.4vw;
+    top: 1.2vw;
     font-size: 2vw;
   }
   .restos__menu-section {

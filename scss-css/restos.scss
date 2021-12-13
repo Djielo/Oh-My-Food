@@ -112,7 +112,7 @@ span {
             font-weight: normal;
             position: absolute;
             top: 6vw;
-            right: 6.667vw;
+            right: 7.667vw;
             font-size: 6.4vw;
             @include heart;
         }
@@ -141,7 +141,7 @@ span {
     &::after {
         content: "";
         display: block;
-        width: 10.667vw;
+        width: 9.667vw;
         height: 0.667vw;
         background: #99e2d0;
         transform: translateY(180%);
@@ -196,7 +196,7 @@ span {
     .cards__validation {
         @extend %df-jcc-aic;
         flex-shrink: 0;
-        margin-right: -15%;
+        margin-right: -16%;
         width: 15%;
         background: #99e2d0;
         color: white;
