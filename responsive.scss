@@ -371,6 +371,7 @@
 
     .restos__img {
         display: block;
+        height: 30vh;
         & img {
             max-height: 40vw;
         }
@@ -547,7 +548,6 @@
         box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
 
         .cards__title {
-            
             h3 {
                 margin: 1.2vw 0 0 2vw;
                 font-size: 1.5vw;
