@@ -1,6 +1,8 @@
 @import "../sass/variables";
 @import "../sass/placeholders";
 
+/* HEART */
+
 @mixin heart {
     cursor: pointer;
     color: black;
@@ -37,6 +39,32 @@
     }
 }
 
+/* BUTTON */
+
+@mixin btn-first {
+    width: 59.733vw;
+    height: 14.133vw;
+    font-size: 4vw;
+    border-radius: 8.533vw;
+    border: none;
+    background-image: linear-gradient(355deg, $primary, $secondary);
+    color: #fff;
+    font-weight: bold;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    @media only screen and (min-width: 750.1px) {
+        width: 30vw;
+        height: 6vw;
+        font-size: 2vw;
+        border-radius: 6vw;
+    }
+}
+
+/* FOOTER */
+
 @mixin footer {
     background: #353535;
     color: white;
@@ -54,7 +82,8 @@
     }
 
     li {
-        @extend %df-aic;
+        display: flex;
+        align-items: center;
     }
 
     .fa-utensils {
@@ -75,7 +104,7 @@
         color: white;
     }
 
-    @media only screen and (min-width: 751px) {
+    @media only screen and (min-width: 750.1px) {
         padding: 3vw;
 
         h1 {
@@ -98,7 +127,7 @@
         }
     }
 
-    @media only screen and (min-width: 992px) {
+    @media only screen and (min-width: 992.1px) {
         padding: 4vw;
         display: flex;
         justify-content: space-between;
@@ -111,6 +140,7 @@
 
         ul {
             display: flex;
+            align-items: center;
             margin: 0;
         }
 
@@ -140,24 +170,55 @@
     }
 }
 
-@mixin btn-first {
-    width: 59.733vw;
-    height: 14.133vw;
-    font-size: 4vw;
-    border-radius: 8.533vw;
-    border: none;
-    background-image: linear-gradient(355deg, $primary, $secondary);
-    color: #fff;
-    font-weight: bold;
+/* LOADER */
 
-    &:hover {
-        opacity: 0.9;
+@mixin loader {
+    .loading {
+        position: fixed;
+        top: 0;
+        @extend %df-jcc-aic;
+        background-color: rgba(153, 226, 208, 0.8);
+        width: 100%;
+        height: 100%;
+        animation: wait 5s 3s infinite;
     }
 
-    @media only screen and (min-width: 751px) {
-        width: 30vw;
-        height: 6vw;
-        font-size: 2vw;
-        border-radius: 6vw;
+    .loader {
+        @extend %df-jcc-aic;
+        width: 15vw;
+        height: 15vw;
+        animation-name: wait;
+    }
+
+    .letter {
+        font-size: 10vw;
+        font-weight: normal;
+        color: $tertiary;
+        animation: scale 1.4s linear infinite;
+
+        &:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        &:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        &:nth-child(4) {
+            animation-delay: 0.4s;
+        }
+        &:nth-child(5) {
+            animation-delay: 0.5s;
+        }
+        &:nth-child(6) {
+            animation-delay: 0.6s;
+        }
+        &:nth-child(7) {
+            animation-delay: 0.7s;
+        }
+        &:nth-child(8) {
+            animation-delay: 0.8s;
+        }
     }
 }

@@ -14,13 +14,9 @@
     }
 }
 
-html {
-    font-size: 62.5%;
-}
-
 body {
     font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-    margin: 0;
+    margin: 0 auto;
     font-weight: normal;
 }
 
@@ -39,18 +35,17 @@ h1 {
 }
 
 h2 {
-    font-size: 6.4vw;
-    font-weight: normal;
+    font-size: 5.5vw;
 }
 
 h3 {
-    font-size: 4.5vw;
+    font-size: 4.8vw;
     font-weight: normal;
 }
 
 p,
 span {
-    font-size: 3.9vw;
+    font-size: 4.2vw;
     font-weight: normal;
 }
 
@@ -90,18 +85,16 @@ span {
     & img {
         width: 100%;
         max-height: 80vw;
-        /* z-index: 1; */        
         object-fit: cover;
     }
 }
 
-.restos__section {
+.restos__title {
     background-color: #f6f6f6;
     padding: 1.333vw 4vw 0 4vw;
     margin-top: -13.333vw;
     border-radius: 10vw 10vw 0 0;
     position: relative;
-    /* z-index: 1; */
 
     .restos__header {
         position: relative;
@@ -110,6 +103,7 @@ span {
         justify-content: space-between;
 
         h1 {
+            font-size: 7vw;
             padding-left: 1.333vw;
         }
 
@@ -124,13 +118,20 @@ span {
     }
 }
 
+.restos__menu-section {
+    background-color: #f6f6f6;
+    padding: 1.333vw 4vw;
+}
+
 .restos__menu {
     @extend %df-fdc;
+    height: max-content;
     gap: 4vw;
     margin-bottom: 10.667vw;
 }
 
 .restos__serving {
+    font-size: 3.8vw;
     margin: 0;
     padding-left: 1.333vw;
 
@@ -158,17 +159,19 @@ span {
     }
 
     .cards__title {
-        width: 70vw;
+        width: 70%;
         white-space: nowrap; /*évite le retour à la ligne */
         overflow: hidden;
 
         h3 {
+            font-size: 4vw;
             margin: 3vw 0 0 3vw;
             font-weight: bold;
             overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
             text-overflow: ellipsis; /*fait apparaitre les ...*/
         }
         p {
+            font-size: 3.4vw;
             margin: 1vw 0 0 3vw;
             overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
             text-overflow: ellipsis; /*fait apparaitre les ...*/
@@ -178,7 +181,7 @@ span {
     .cards__price {
         text-align: center;
         flex-shrink: 0;
-        width: 16vw;
+        width: 15%;
         padding-top: 9.667vw;
 
         span {
@@ -190,8 +193,8 @@ span {
     .cards__validation {
         @extend %df-jcc-aic;
         flex-shrink: 0;
-        margin-right: -21.333vw;
-        width: 16vw;
+        margin-right: -15%;
+        width: 15%;
         background: #99e2d0;
         color: white;
     }
@@ -227,8 +230,7 @@ span {
     @extend %df-jcc;
 
     .btn-first {
-        z-index: 1;
-        margin-bottom: 22vw;
+        margin: 10vw 0;
         @include btn-first;
     }
 }
@@ -240,5 +242,56 @@ footer {
 
     p {
         font-size: 4.267vw;
+    }
+}
+
+/* LOADER */
+
+.loading {
+    position: fixed;
+    top: 0;
+    @extend %df-jcc-aic;
+    background-color: rgba(153, 226, 208, 0.8);
+    width: 100%;
+    height: 100%;
+    animation: wait 5s 3s infinite;
+}
+
+.loader {
+    @extend %df-jcc-aic;
+    width: 15vw;
+    height: 15vw;
+    animation-name: wait;
+}
+
+.letter {
+    font-size: 10vw;
+    font-weight: normal;
+    color: $tertiary;
+    animation: scale 1.4s linear infinite;
+
+    &:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+    &:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+        animation-delay: 0.3s;
+    }
+    &:nth-child(4) {
+        animation-delay: 0.4s;
+    }
+    &:nth-child(5) {
+        animation-delay: 0.5s;
+    }
+    &:nth-child(6) {
+        animation-delay: 0.6s;
+    }
+    &:nth-child(7) {
+        animation-delay: 0.7s;
+    }
+    &:nth-child(8) {
+        animation-delay: 0.8s;
     }
 }

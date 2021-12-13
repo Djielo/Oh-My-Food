@@ -9,15 +9,6 @@
           flex-direction: column;
 }
 
-footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .restos__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +27,7 @@ footer li {
           justify-content: space-between;
 }
 
-.restos__cards .cards__validation {
+.restos__cards .cards__validation, .loading, .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,15 +49,6 @@ footer li {
           flex-direction: column;
 }
 
-footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .restos__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +67,7 @@ footer li {
           justify-content: space-between;
 }
 
-.restos__cards .cards__validation {
+.restos__cards .cards__validation, .loading, .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,6 +79,10 @@ footer li {
           align-items: center;
 }
 
+/* HEART */
+/* BUTTON */
+/* FOOTER */
+/* LOADER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
   from {
@@ -246,13 +232,9 @@ footer li {
           box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-  margin: 0;
+  margin: 0 auto;
   font-weight: normal;
 }
 
@@ -271,18 +253,17 @@ h1 {
 }
 
 h2 {
-  font-size: 6.4vw;
-  font-weight: normal;
+  font-size: 5.5vw;
 }
 
 h3 {
-  font-size: 4.5vw;
+  font-size: 4.8vw;
   font-weight: normal;
 }
 
 p,
 span {
-  font-size: 3.9vw;
+  font-size: 4.2vw;
   font-weight: normal;
 }
 
@@ -328,21 +309,19 @@ span {
 .restos__img img {
   width: 100%;
   max-height: 80vw;
-  /* z-index: 1; */
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.restos__section {
+.restos__title {
   background-color: #f6f6f6;
   padding: 1.333vw 4vw 0 4vw;
   margin-top: -13.333vw;
   border-radius: 10vw 10vw 0 0;
   position: relative;
-  /* z-index: 1; */
 }
 
-.restos__section .restos__header {
+.restos__title .restos__header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,11 +334,12 @@ span {
           justify-content: space-between;
 }
 
-.restos__section .restos__header h1 {
+.restos__title .restos__header h1 {
+  font-size: 7vw;
   padding-left: 1.333vw;
 }
 
-.restos__section .restos__header .fa-heart {
+.restos__title .restos__header .fa-heart {
   font-weight: normal;
   position: absolute;
   top: 8vw;
@@ -374,7 +354,7 @@ span {
   transition: opacity ease 0.4s;
 }
 
-.restos__section .restos__header .fa-heart:hover {
+.restos__title .restos__header .fa-heart:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
   font-weight: 300;
@@ -385,13 +365,13 @@ span {
   background-image: linear-gradient(#9556dc, #ff79da);
 }
 
-.restos__section .restos__header .fa-heart:hover::after {
+.restos__title .restos__header .fa-heart:hover::after {
   opacity: 1;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
 
-.restos__section .restos__header .fa-heart::after {
+.restos__title .restos__header .fa-heart::after {
   content: "\f004";
   position: absolute;
   top: 0;
@@ -411,12 +391,21 @@ span {
   transition: opacity ease 0.4s;
 }
 
+.restos__menu-section {
+  background-color: #f6f6f6;
+  padding: 1.333vw 4vw;
+}
+
 .restos__menu {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   gap: 4vw;
   margin-bottom: 10.667vw;
 }
 
 .restos__serving {
+  font-size: 3.8vw;
   margin: 0;
   padding-left: 1.333vw;
 }
@@ -448,13 +437,14 @@ span {
 }
 
 .restos__cards .cards__title {
-  width: 70vw;
+  width: 70%;
   white-space: nowrap;
   /*évite le retour à la ligne */
   overflow: hidden;
 }
 
 .restos__cards .cards__title h3 {
+  font-size: 4vw;
   margin: 3vw 0 0 3vw;
   font-weight: bold;
   overflow: hidden;
@@ -464,6 +454,7 @@ span {
 }
 
 .restos__cards .cards__title p {
+  font-size: 3.4vw;
   margin: 1vw 0 0 3vw;
   overflow: hidden;
   /*efface le texte au fur et à mesure qu'on passe dessus*/
@@ -475,7 +466,7 @@ span {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 16vw;
+  width: 15%;
   padding-top: 9.667vw;
 }
 
@@ -487,8 +478,8 @@ span {
 .restos__cards .cards__validation {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin-right: -21.333vw;
-  width: 16vw;
+  margin-right: -15%;
+  width: 15%;
   background: #99e2d0;
   color: white;
 }
@@ -528,8 +519,7 @@ span {
 }
 
 .restos__button .btn-first {
-  z-index: 1;
-  margin-bottom: 22vw;
+  margin: 10vw 0;
   width: 59.733vw;
   height: 14.133vw;
   font-size: 4vw;
@@ -544,7 +534,7 @@ span {
   opacity: 0.9;
 }
 
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 750.1px) {
   .restos__button .btn-first {
     width: 30vw;
     height: 6vw;
@@ -571,6 +561,15 @@ footer ul {
   margin: 0 auto;
 }
 
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .fa-utensils {
   margin-right: 3.333vw;
   margin-left: 1.333vw;
@@ -589,7 +588,7 @@ footer a {
   color: white;
 }
 
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 750.1px) {
   footer {
     padding: 3vw;
   }
@@ -610,7 +609,7 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992.1px) {
   footer {
     padding: 4vw;
     display: -webkit-box;
@@ -631,6 +630,9 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
   footer li {
@@ -658,5 +660,71 @@ footer a {
 
 footer p {
   font-size: 4.267vw;
+}
+
+/* LOADER */
+.loading {
+  position: fixed;
+  top: 0;
+  background-color: rgba(153, 226, 208, 0.8);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: wait 5s 3s infinite;
+          animation: wait 5s 3s infinite;
+}
+
+.loader {
+  width: 15vw;
+  height: 15vw;
+  -webkit-animation-name: wait;
+          animation-name: wait;
+}
+
+.letter {
+  font-size: 10vw;
+  font-weight: normal;
+  color: #99e2d0;
+  -webkit-animation: scale 1.4s linear infinite;
+          animation: scale 1.4s linear infinite;
+}
+
+.letter:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.letter:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.letter:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.letter:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.letter:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.letter:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.letter:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.letter:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 /*# sourceMappingURL=restos.css.map */

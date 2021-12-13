@@ -1,15 +1,19 @@
-@media only screen and (min-width: 751px) {
-    @import "sass/variables";
-    @import "sass/placeholders";
-    @import "sass/mixins";
-    @import "sass/keyframes";
+@import "sass/variables";
+@import "sass/placeholders";
+@import "sass/mixins";
+@import "sass/keyframes";
 
+/*************     **************\
+            HOME PAGE
+\********************************/
+
+@media only screen and (min-width: 750.1px) {
     /* GENERAL */
 
     .header__logo,
     h1 {
         font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-        font-size: 4.467vw;
+        font-size: 3.5vw;
     }
 
     h2 {
@@ -33,12 +37,13 @@
     /* HEADER */
 
     header {
-        height: 8.8vw;
-    }
+        height: 6.8vw;
 
-    .header__logo {
-        text-align: center;
-        margin: 2vw 0 0 0;
+        .header__logo {
+            margin: 1.8vw 0;
+            font-size: 3.5vw;
+            font-weight: normal;
+        }
     }
 
     /* MAIN */
@@ -84,7 +89,10 @@
     }
 
     .fonctionnement__magnets {
-        @extend %df-fdc-jcc-aic;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         padding: 4vw 0 0 0;
         gap: 2vw;
@@ -118,7 +126,10 @@
     /* SECTION RESTAURANTS */
 
     .restaurants__section {
-        @extend %df-fdc-jcc-aic;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 4vw;
     }
 
@@ -153,7 +164,8 @@
     }
 
     .restocard__details {
-        @extend %df-fdc;
+        display: flex;
+        flex-direction: column;
         height: max-content;
         margin: 1.6vw 0;
     }
@@ -169,32 +181,97 @@
     /* LOADER == Idem Mobile */
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992.1px) {
+    /* GENERAL */
+
+    body {
+        max-width: 1440px;
+        margin: 2vw auto;
+        border-radius: 3.5vw;
+        background-color: white;
+    }
+
+    /* HEADER */
+    .header {
+        height: 5vw;
+
+        .header__logo {
+            font-size: 2vw;
+            padding: 1vw 0;
+        }
+    }
+
+    /* MAIN */
+    /* SECTION POSITION */
+
+    .position {
+        height: 5vw;
+
+        .fa-map-marker-alt {
+            font-size: 1.5vw;
+            margin-right: 1.5vw;
+        }
+
+        span {
+            font-size: 1.5vw;
+        }
+    }
+
+    /* SECTION RESERVER */
+
+    .reserver {
+        height: auto;
+
+        h2 {
+            font-size: 1.5vw;
+            padding: 2vw 0;
+        }
+
+        p {
+            font-size: 1.5vw;
+            width: 80vw;
+        }
+
+        .btn-first {
+            width: 30vw;
+            height: 4vw;
+            margin: 3vw 0;
+            font-size: 1.8vw;
+            border-radius: 2vw;
+        }
+    }
+
     /* SECTION FONCTIONNEMENT */
 
     .fonctionnement__section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 4vw;
+        padding: 3vw;
         height: auto;
+
+        .fonctionnement__title {
+            font-size: 2.2vw;
+            text-align: center;
+            margin: 0;
+        }
 
         .fonctionnement__magnets {
             display: flex;
             flex-direction: row;
-            width: 100%;
-            padding: 4vw 0 0 0;
+            width: 85%;
+            padding: 3vw 0 1vw 0;
             gap: 2vw;
         }
 
         .fonctionnement__magnet {
             margin: 0;
-            width: 32%;
-            height: 8vw;
+            width: 30%;
+            height: 6vw;
             border-radius: 3vw;
 
             .step {
-                font-size: 2vw;
+                font-size: 1.6vw;
                 padding-left: 4vw;
             }
         }
@@ -209,7 +286,313 @@
         .fa-list-ul,
         .fa-store {
             left: 2.6vw;
-            font-size: 2.5vw;
+            font-size: 1.8vw;
+        }
+    }
+
+    /* SECTION RESTAURANTS */
+
+    .restaurants__section {
+        padding: 3vw;
+    }
+
+    .restaurants__title {
+        font-size: 2.2vw;
+        margin: 0 0 3vw 0;
+    }
+
+    .restaurants__cards {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .restaurants__card {
+        height: 20vw;
+        border-radius: 3.333vw;
+    }
+
+    .restocard__h3 {
+        margin: 0 0 0.6vw 3.333vw;
+        font-size: 1.8vw;
+    }
+
+    .restocard__p {
+        margin: 0 0 0.6vw 3.333vw;
+        font-size: 1.4vw;
+    }
+
+    .restocard__img {
+        border-radius: 3.333vw 3.333vw 0 0;
+    }
+
+    .restocard__details {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin: 0.6vw 0;
+    }
+
+    .fa-heart {
+        bottom: 1.3vw;
+        right: 4vw;
+        font-size: 2vw;
+    }
+}
+
+/**************     **************\
+            RESTOS PAGE
+\*********************************/
+
+/* HEADER */
+
+@media only screen and (min-width: 750.1px) {
+    .header-restos {
+        height: 8.8vw;
+
+        .arrow-left {
+            left: 4vw;
+            top: 3.5vw;
+
+            .fas {
+                font-size: 2vw;
+            }
+        }
+
+        h1 {
+            margin: 1.8vw 0;
+            font-size: 3.5vw;
+        }
+    }
+
+    /* MAIN */
+
+    .restos__img {
+        display: block;
+        & img {
+            max-height: 40vw;
+        }
+    }
+
+    .restos__title {
+        margin-top: -10vw;
+        border-radius: 5vw 5vw 0 0;
+
+        .restos__header {
+            justify-content: center;
+            h1 {
+                font-size: 3.5vw;
+                margin-top: 3vw;
+            }
+
+            .fa-heart {
+                top: 4vw;
+                right: 6vw;
+                font-size: 3.5vw;
+            }
+        }
+    }
+
+    .restos__menu-section {
+        background-color: #f6f6f6;
+        padding: 1.333vw 4vw 0 4vw;
+    }
+
+    .restos__menu {
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        margin-bottom: 6vw;
+    }
+
+    .restos__serving {
+        font-size: 2vw;
+        &::after {
+            width: 5.8vw;
+            height: 0.567vw;
+            transform: translateY(100%);
+        }
+    }
+
+    .restos__cards {
+        width: 85%;
+        height: 11vw;
+        border-radius: 3vw;
+        box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+
+        .cards__title {
+            h3 {
+                margin: 1.5vw 0 0 4vw;
+                font-size: 3vw;
+            }
+
+            p {
+                font-size: 2vw;
+                margin: 1vw 0 0 4vw;
+            }
+        }
+
+        .cards__price {
+            font-size: 2vw;
+            padding-top: 6vw;
+        }
+    }
+
+    .restos__button {
+        .btn-first {
+            margin-bottom: 6vw;
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        p {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 992.1px) {
+    /* GENERAL */
+
+    html {
+        background-color: rgba(153, 226, 208, 0.3);
+    }
+
+    body {
+        max-width: 1440px;
+        margin: 2vw auto;
+        border-radius: 3.5vw;
+        background-color: white;
+    }
+
+    /* HEADER */
+    .header-restos {
+        height: 5vw;
+
+        .arrow-left {
+            top: 1.8vw;
+
+            .fas {
+                font-size: 1.2vw;
+            }
+        }
+
+        h1 {
+            font-size: 2vw;
+            margin: 1vw 0;
+        }
+    }
+
+    /* MAIN */
+
+    .restos__img {
+        display: block;
+        & img {
+            width: 100%;
+            max-height: 20vh;
+        }
+    }
+
+    .restos__title {
+        margin-top: -6vw;
+        border-radius: 3vw 3vw 0 0;
+        .restos__header {
+            h1 {
+                font-size: 2vw;
+                margin-top: 1vw;
+            }
+
+            .fa-heart {
+                top: 1.4vw;
+                font-size: 2vw;
+            }
+        }
+    }
+
+    .restos__menu-section {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background-color: #f6f6f6;
+        padding: 1.5vw 0 1vw 0;
+    }
+
+    .restos__menu {
+        width: 33%;
+        gap: 1vw;
+
+        h3 {
+            font-size: 1.2vw;
+        }
+        gap: 1.2vw;
+        margin-bottom: 4vw;
+    }
+
+    .restos__serving {
+        &::after {
+            width: 3vw;
+            height: 0.3vw;
+            transform: translateY(40%);
+        }
+    }
+
+    .restos__cards {
+        width: 96%;
+        height: 6.5vw;
+        border-radius: 1.3vw;
+        box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
+
+        .cards__title {
+            
+            h3 {
+                margin: 1.2vw 0 0 2vw;
+                font-size: 1.5vw;
+            }
+
+            p {
+                font-size: 1.2vw;
+                margin: 0.5vw 0 0 2vw;
+            }
+        }
+
+        .cards__price {
+            width: 5vw;
+            padding-top: 3.4vw;
+
+            span {
+                font-size: 1.2vw;
+            }
+        }
+
+        .cards__validation {
+            margin-right: -5vw;
+            width: 5vw;
+        }
+    }
+
+    .restos__button {
+        .btn-first {
+            margin: 3vw 0;
+            width: 18vw;
+            height: 4vw;
+            font-size: 1.8vw;
+            border-radius: 2vw;
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        border-radius: 0 0 50px 50px;
+        h1 {
+            font-size: 2vw;
+        }
+        p {
+            font-size: 1.5vw;
         }
     }
 }

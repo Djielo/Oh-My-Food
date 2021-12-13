@@ -16,7 +16,8 @@
 
 body {
     font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-    margin: 0;
+    margin: 0 auto;
+    font-weight: normal;
 }
 
 a {
@@ -30,19 +31,21 @@ a {
 h1 {
     font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     font-size: 7.467vw;
+    font-weight: normal;
 }
 
 h2 {
-    font-size: 6.4vw;
+    font-size: 5.5vw;
 }
 
 h3 {
-    font-size: 4.667vw;
+    font-size: 4.8vw;
 }
 
 p,
 span {
-    font-size: 4.267vw;
+    font-size: 4.2vw;
+    font-weight: normal;
 }
 
 .fas,
@@ -58,7 +61,8 @@ header {
 
 .header__logo {
     text-align: center;
-    margin: 4.267vw 0 0 0;
+    margin: 3.333vw 0 0 0;
+    font-weight: normal;
 }
 
 /* MAIN */
@@ -80,6 +84,7 @@ header {
 
 .reserver {
     @extend %df-fdc-aic;
+    padding: 0 6vw;
     background: #f6f6f6;
     height: 76.8vw;
 
@@ -90,7 +95,6 @@ header {
     }
 
     p {
-        font-size: 4.667vw;
         text-align: center;
         margin: 0;
     }
@@ -128,6 +132,7 @@ header {
     flex-grow: 1;
 
     &:hover {
+        cursor: pointer;
         background-color: lighten($secondary, 24%);
     }
 

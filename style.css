@@ -8,15 +8,6 @@
           flex-direction: column;
 }
 
-footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .reserver, .restaurants__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,15 +43,6 @@ footer li {
           flex-direction: column;
 }
 
-footer li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .reserver, .restaurants__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +68,10 @@ footer li {
           align-items: center;
 }
 
+/* HEART */
+/* BUTTON */
+/* FOOTER */
+/* LOADER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
   from {
@@ -237,7 +223,8 @@ footer li {
 
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-  margin: 0;
+  margin: 0 auto;
+  font-weight: normal;
 }
 
 a {
@@ -251,19 +238,21 @@ a {
 h1 {
   font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 7.467vw;
+  font-weight: normal;
 }
 
 h2 {
-  font-size: 6.4vw;
+  font-size: 5.5vw;
 }
 
 h3 {
-  font-size: 4.667vw;
+  font-size: 4.8vw;
 }
 
 p,
 span {
-  font-size: 4.267vw;
+  font-size: 4.2vw;
+  font-weight: normal;
 }
 
 .fas,
@@ -278,7 +267,8 @@ header {
 
 .header__logo {
   text-align: center;
-  margin: 4.267vw 0 0 0;
+  margin: 3.333vw 0 0 0;
+  font-weight: normal;
 }
 
 /* MAIN */
@@ -297,6 +287,7 @@ header {
 
 /* SECTION RESERVER */
 .reserver {
+  padding: 0 6vw;
   background: #f6f6f6;
   height: 76.8vw;
 }
@@ -308,7 +299,6 @@ header {
 }
 
 .reserver p {
-  font-size: 4.667vw;
   text-align: center;
   margin: 0;
 }
@@ -329,7 +319,7 @@ header {
   opacity: 0.9;
 }
 
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 750.1px) {
   .reserver .btn-first {
     width: 30vw;
     height: 6vw;
@@ -367,6 +357,7 @@ header {
 }
 
 .fonctionnement__magnet:hover {
+  cursor: pointer;
   background-color: #fff3fc;
 }
 
@@ -525,6 +516,15 @@ footer ul {
   margin: 0 auto;
 }
 
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .fa-utensils {
   margin-right: 3.333vw;
   margin-left: 1.333vw;
@@ -543,7 +543,7 @@ footer a {
   color: white;
 }
 
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 750.1px) {
   footer {
     padding: 3vw;
   }
@@ -564,7 +564,7 @@ footer a {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992.1px) {
   footer {
     padding: 4vw;
     display: -webkit-box;
@@ -585,6 +585,9 @@ footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
   footer li {
