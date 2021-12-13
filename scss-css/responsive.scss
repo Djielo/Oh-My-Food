@@ -294,6 +294,7 @@
 
     .restaurants__section {
         padding: 3vw;
+        margin-bottom: 1vw;
     }
 
     .restaurants__title {
@@ -377,12 +378,12 @@
     }
 
     .restos__title {
-        margin-top: -10vw;
+        margin-top: -8vw;
         border-radius: 5vw 5vw 0 0;
 
         .restos__header {
             justify-content: center;
-            h1 {
+            h2 {
                 font-size: 3.5vw;
                 margin: 3vw 0 1vw 0;
             }
@@ -504,10 +505,10 @@
     }
 
     .restos__title {
-        margin-top: -6vw;
+        margin-top: -4vw;
         border-radius: 3vw 3vw 0 0;
         .restos__header {
-            h1 {
+            h2 {
                 font-size: 2vw;
                 margin-top: 1vw;
             }
@@ -535,7 +536,7 @@
             font-size: 1.2vw;
         }
         gap: 1.2vw;
-        margin-bottom: 4vw;
+        margin-bottom: 0vw;
     }
 
     .restos__serving {
@@ -585,7 +586,7 @@
 
     .restos__button {
         .btn-first {
-            margin: 3vw 0;
+            margin: 3vw 0 4vw 0;
             width: 18vw;
             height: 4vw;
             font-size: 1.8vw;

@@ -102,7 +102,7 @@ span {
         align-items: baseline;
         justify-content: space-between;
 
-        h1 {
+        h2 {
             font-size: 7vw;
             padding-left: 1.333vw;
         }
@@ -227,7 +227,7 @@ span {
 }
 
 .restos__button {
-    @extend %df-jcc;
+    @extend %df-jcc;    
     background-color: #f6f6f6;
 
     .btn-first {

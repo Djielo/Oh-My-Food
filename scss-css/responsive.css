@@ -1,3 +1,7 @@
+/* HEART */
+/* BUTTON */
+/* FOOTER */
+/* LOADER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
   from {
@@ -304,8 +308,8 @@
     right: 4vw;
     font-size: 3vw;
   }
-  /* FOOTER */
-  /* LOADER */
+  /* FOOTER == Idem Mobile */
+  /* LOADER == Idem Mobile */
 }
 
 @media only screen and (min-width: 992.1px) {
@@ -411,6 +415,7 @@
   /* SECTION RESTAURANTS */
   .restaurants__section {
     padding: 3vw;
+    margin-bottom: 1vw;
   }
   .restaurants__title {
     font-size: 2.2vw;
@@ -491,7 +496,7 @@
     max-height: 50vw;
   }
   .restos__title {
-    margin-top: -10vw;
+    margin-top: -8vw;
     border-radius: 5vw 5vw 0 0;
   }
   .restos__title .restos__header {
@@ -499,7 +504,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .restos__title .restos__header h1 {
+  .restos__title .restos__header h2 {
     font-size: 3.5vw;
     margin: 3vw 0 1vw 0;
   }
@@ -596,10 +601,10 @@
     max-height: 40vh;
   }
   .restos__title {
-    margin-top: -6vw;
+    margin-top: -4vw;
     border-radius: 3vw 3vw 0 0;
   }
-  .restos__title .restos__header h1 {
+  .restos__title .restos__header h2 {
     font-size: 2vw;
     margin-top: 1vw;
   }
@@ -621,7 +626,7 @@
     width: 33%;
     gap: 1vw;
     gap: 1.2vw;
-    margin-bottom: 4vw;
+    margin-bottom: 0vw;
   }
   .restos__menu h3 {
     font-size: 1.2vw;
@@ -662,7 +667,7 @@
     font-size: 2vw;
   }
   .restos__button .btn-first {
-    margin: 3vw 0;
+    margin: 3vw 0 4vw 0;
     width: 18vw;
     height: 4vw;
     font-size: 1.8vw;

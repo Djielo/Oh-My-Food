@@ -334,7 +334,7 @@ span {
           justify-content: space-between;
 }
 
-.restos__title .restos__header h1 {
+.restos__title .restos__header h2 {
   font-size: 7vw;
   padding-left: 1.333vw;
 }
