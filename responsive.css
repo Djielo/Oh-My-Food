@@ -492,7 +492,7 @@
     display: block;
   }
   .restos__img img {
-    max-height: 40vw;
+    max-height: 50vw;
   }
   .restos__title {
     margin-top: -10vw;
@@ -594,7 +594,7 @@
   }
   .restos__img img {
     width: 100%;
-    max-height: 20vh;
+    max-height: 40vh;
   }
   .restos__title {
     margin-top: -6vw;

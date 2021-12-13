@@ -370,9 +370,9 @@
     /* MAIN */
 
     .restos__img {
-        display: block;        
+        display: block;
         & img {
-            max-height: 40vw;
+            max-height: 50vw;
         }
     }
 
@@ -490,10 +490,10 @@
     /* MAIN */
 
     .restos__img {
-        display: block;
+        display: block;        
         & img {
             width: 100%;
-            max-height: 20vh;
+            max-height: 40vh;
         }
     }
 

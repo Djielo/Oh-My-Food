@@ -518,6 +518,10 @@ span {
           transform: rotate(-360deg);
 }
 
+.restos__button {
+  background-color: #f6f6f6;
+}
+
 .restos__button .btn-first {
   margin: 10vw 0;
   width: 59.733vw;

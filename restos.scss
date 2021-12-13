@@ -81,7 +81,7 @@ span {
 /* MAIN */
 
 .restos__img {
-    display: block;
+    display: block;    
     & img {
         width: 100%;
         max-height: 80vw;
@@ -228,6 +228,7 @@ span {
 
 .restos__button {
     @extend %df-jcc;
+    background-color: #f6f6f6;
 
     .btn-first {
         margin: 10vw 0;
