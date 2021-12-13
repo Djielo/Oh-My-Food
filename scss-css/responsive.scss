@@ -384,7 +384,7 @@
             justify-content: center;
             h1 {
                 font-size: 3.5vw;
-                margin-top: 3vw;
+                margin: 3vw 0 1vw 0;
             }
 
             .fa-heart {
@@ -404,7 +404,7 @@
         justify-content: center;
         align-items: center;
         gap: 2vw;
-        margin-bottom: 6vw;
+        margin: 3vw 0 0 0;
     }
 
     .restos__serving {
@@ -438,11 +438,17 @@
             font-size: 2vw;
             padding-top: 6vw;
         }
+
+        .cards__validation {
+            .fas {
+                font-size: 3.5vw;
+            }
+        }
     }
 
     .restos__button {
         .btn-first {
-            margin-bottom: 6vw;
+            margin: 6vw 0;
         }
     }
 
@@ -490,7 +496,7 @@
     /* MAIN */
 
     .restos__img {
-        display: block;        
+        display: block;
         & img {
             width: 100%;
             max-height: 40vh;
@@ -570,6 +576,10 @@
         .cards__validation {
             margin-right: -5vw;
             width: 5vw;
+
+            .fas {
+                font-size: 2vw;
+            }
         }
     }
 
