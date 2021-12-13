@@ -1,7 +1,7 @@
-@import "sass/variables";
-@import "sass/placeholders";
-@import "sass/mixins";
-@import "sass/keyframes";
+@import "../sass/variables";
+@import "../sass/placeholders";
+@import "../sass/mixins";
+@import "../sass/keyframes";
 
 /* GENERAL */
 
@@ -242,7 +242,7 @@ footer {
     top: 0;
     left: 0;
     @extend %df-jcc-aic;
-    background-color: rgba(153, 226, 208, 0.8);    
+    background-color: rgba(153, 226, 208, 0.8);
     width: 100%;
     height: 100%;
     animation: wait 5s 3s infinite;
