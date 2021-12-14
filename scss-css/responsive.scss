@@ -186,8 +186,7 @@
 /*********************************************************************************
 *********************************************************************************/
 
-@media only screen and (min-width: 992.1px) {    
-
+@media only screen and (min-width: 992.1px) {
     /* HEADER */
     .header {
         height: 5vw;
@@ -421,13 +420,13 @@
 
     .restos__cards {
         width: 85%;
-        height: 11vw;
+        height: 10vw;
         border-radius: 3vw;
         box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
 
         .cards__title {
             h3 {
-                margin: 1.5vw 0 0 4vw;
+                margin: 1.3vw 0 0 4vw;
                 font-size: 3vw;
             }
 
@@ -439,7 +438,7 @@
 
         .cards__price {
             font-size: 2vw;
-            padding-top: 6vw;
+            padding-top: 5.7vw;
         }
 
         .cards__validation {
@@ -468,7 +467,6 @@
 *********************************************************************************/
 
 @media only screen and (min-width: 992.1px) {
-
     /* HEADER */
     .header-restos {
         height: 5vw;
@@ -542,25 +540,25 @@
 
     .restos__cards {
         width: 96%;
-        height: 6vw;
+        height: 5.5vw;        
         border-radius: 1.3vw;
         box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
 
         .cards__title {
             h3 {
-                margin: 1.2vw 0 0 2vw;
+                margin: .8vw 0 0 2vw;
                 font-size: 1.3vw;
             }
 
             p {
                 font-size: 1.1vw;
-                margin: 0.5vw 0 0 2vw;
+                margin: 1vw 0 0 2vw;
             }
         }
 
         .cards__price {
             width: 5vw;
-            padding-top: 3.4vw;
+            padding-top: 2.5vw;
 
             span {
                 font-size: 1.2vw;

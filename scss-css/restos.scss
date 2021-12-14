@@ -152,7 +152,7 @@ span {
 .restos__cards {
     @extend %df-jcsb;
     flex-grow: 1;
-    height: 18vw;
+    height: 14vw;
     border-radius: 4.4vw;
     box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
     text-overflow: ellipsis;
@@ -163,13 +163,13 @@ span {
     }
 
     .cards__title {
-        width: 70%;
+        width: 70%;        
         white-space: nowrap; /*évite le retour à la ligne */
         overflow: hidden;
 
         h3 {
             font-size: 4vw;
-            margin: 3vw 0 0 3vw;
+            margin: 2vw 0 0 3vw;
             font-weight: bold;
             overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
             text-overflow: ellipsis; /*fait apparaitre les ...*/
@@ -186,7 +186,7 @@ span {
         text-align: center;
         flex-shrink: 0;
         width: 15%;
-        padding-top: 9.667vw;
+        padding-top: 7.5vw;
 
         span {
             font-weight: bold;
@@ -201,6 +201,7 @@ span {
         width: 15%;
         background: #99e2d0;
         color: white;
+        transition-duration: 1s;
     }
 
     &:hover .cards__validation {
