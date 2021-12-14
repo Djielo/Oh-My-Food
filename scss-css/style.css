@@ -446,13 +446,14 @@ header {
 .new::after {
   position: absolute;
   content: "Nouveau";
+  font-size: 4vw;
   top: 4vw;
-  right: 4vw;
+  right: 5vw;
   color: #008766;
-  padding: 1.1vw;
+  padding: 1.2vw;
   background-color: #99e2d0;
-  height: 7vw;
-  width: 18vw;
+  height: 7.2vw;
+  width: 20vw;
   text-align: center;
   border-radius: 0.5vw;
 }
