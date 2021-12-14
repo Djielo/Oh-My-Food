@@ -293,6 +293,13 @@
   .restocard__img {
     border-radius: 4.333vw 4.333vw 0 0;
   }
+  .new::after {
+    top: 1.6vw;
+    right: 1.8vw;
+    padding: 0.7vw;
+    height: 4vw;
+    width: 11vw;
+  }
   .restocard__details {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -446,6 +453,13 @@
   }
   .restocard__img {
     border-radius: 3.333vw 3.333vw 0 0;
+  }
+  .new::after {
+    top: 1.5vw;
+    right: 1.6vw;
+    padding: 0.6vw;
+    height: 3.2vw;
+    width: 9vw;
   }
   .restocard__details {
     display: -webkit-box;
@@ -637,7 +651,7 @@
             box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
   }
   .restos__cards .cards__title h3 {
-    margin: .8vw 0 0 2vw;
+    margin: 0.8vw 0 0 2vw;
     font-size: 1.3vw;
   }
   .restos__cards .cards__title p {

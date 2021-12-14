@@ -429,6 +429,7 @@ header {
 }
 
 .restocard__img {
+  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 5.333vw 5.333vw 0 0;
@@ -440,6 +441,20 @@ header {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.new::after {
+  position: absolute;
+  content: "Nouveau";
+  top: 4vw;
+  right: 4vw;
+  color: #008766;
+  padding: 1.1vw;
+  background-color: #99e2d0;
+  height: 7vw;
+  width: 18vw;
+  text-align: center;
+  border-radius: 0.5vw;
 }
 
 .restocard__details {
