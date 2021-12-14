@@ -79,10 +79,13 @@
           align-items: center;
 }
 
+/*******************************************************************
+*******************************************************************/
 /* HEART */
 /* BUTTON */
+/*******************************************************************
+*******************************************************************/
 /* FOOTER */
-/* LOADER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
   from {
@@ -340,6 +343,7 @@ span {
 }
 
 .restos__title .restos__header .fa-heart {
+  z-index: 1;
   font-weight: normal;
   position: absolute;
   top: 6vw;
@@ -490,6 +494,19 @@ span {
   margin-right: 0;
 }
 
+.restos__cards .fa-check-circle {
+  font-size: 5.3vw;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.restos__cards:hover .fa-check-circle {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
 .slideup {
   -webkit-animation: slideup 1.5s ease;
   animation: slideup 1.5s ease;
@@ -503,19 +520,6 @@ span {
 .slideup-right {
   -webkit-animation: slideup-right 1.5s ease;
   animation: slideup-right 1.5s ease;
-}
-
-.fa-check-circle {
-  font-size: 5.3vw;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-.restos__cards:hover .fa-check-circle {
-  -webkit-transform: rotate(-360deg);
-          transform: rotate(-360deg);
 }
 
 .restos__button {

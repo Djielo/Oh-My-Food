@@ -1,9 +1,12 @@
 @import "../sass/variables";
 @import "../sass/placeholders";
 
+/*******************************************************************
+*******************************************************************/
+
 /* HEART */
 
-@mixin heart {
+@mixin heart {    
     cursor: pointer;
     color: black;
     font-weight: 100;
@@ -62,6 +65,9 @@
         border-radius: 6vw;
     }
 }
+
+/*******************************************************************
+*******************************************************************/
 
 /* FOOTER */
 
@@ -166,59 +172,6 @@
 
         a {
             color: white;
-        }
-    }
-}
-
-/* LOADER */
-
-@mixin loader {
-    .loading {
-        position: fixed;
-        top: 0;
-        @extend %df-jcc-aic;
-        background-color: rgba(153, 226, 208, 0.8);
-        width: 100%;
-        height: 100%;
-        animation: wait 5s 3s infinite;
-    }
-
-    .loader {
-        @extend %df-jcc-aic;
-        width: 15vw;
-        height: 15vw;
-        animation-name: wait;
-    }
-
-    .letter {
-        font-size: 10vw;
-        font-weight: normal;
-        color: $tertiary;
-        animation: scale 1.4s linear infinite;
-
-        &:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-        &:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        &:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-        &:nth-child(4) {
-            animation-delay: 0.4s;
-        }
-        &:nth-child(5) {
-            animation-delay: 0.5s;
-        }
-        &:nth-child(6) {
-            animation-delay: 0.6s;
-        }
-        &:nth-child(7) {
-            animation-delay: 0.7s;
-        }
-        &:nth-child(8) {
-            animation-delay: 0.8s;
         }
     }
 }
