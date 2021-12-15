@@ -397,6 +397,24 @@ span {
   transition: opacity ease 0.4s;
 }
 
+.francaise img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 0% 60%;
+     object-position: 0% 60%;
+}
+
+.delice img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 0% 70%;
+     object-position: 0% 70%;
+}
+
 .restos__menu-section {
   background-color: #f6f6f6;
   padding: 1.333vw 4vw;
