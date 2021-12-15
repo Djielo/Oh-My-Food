@@ -191,6 +191,12 @@ header {
     border-radius: 5.333vw;
     box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
     flex-grow: 1;
+    transition: box-shadow 1s;
+
+    &:hover {        
+        transition: box-shadow 0.5s;
+        box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
+    }
 }
 
 .restocard__h3 {

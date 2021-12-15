@@ -156,9 +156,8 @@ span {
     flex-grow: 1;
     height: 14vw;
     border-radius: 4.4vw;
-    box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
-    text-overflow: ellipsis;
-    overflow: hidden;
+    box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);    
+    overflow: hidden; /* cache la div contenant le check */
 
     &:hover {
         cursor: pointer;
@@ -167,7 +166,7 @@ span {
     .cards__title {
         width: 70%;        
         white-space: nowrap; /*évite le retour à la ligne */
-        overflow: hidden;
+        overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
 
         h3 {
             font-size: 4vw;

@@ -308,6 +308,7 @@ header {
 
 .reserver .btn-first {
   margin-top: 8.533vw;
+  cursor: pointer;
   width: 59.733vw;
   height: 14.133vw;
   font-size: 4vw;
@@ -316,10 +317,22 @@ header {
   background-image: linear-gradient(355deg, #9556dc, #ff79da);
   color: #fff;
   font-weight: bold;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
 }
 
 .reserver .btn-first:hover {
   opacity: 0.9;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   -webkit-box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
           box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
 }
@@ -420,6 +433,19 @@ header {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+.restaurants__card:hover {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
+          box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
 }
 
 .restocard__h3 {
