@@ -229,7 +229,8 @@ header {
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-        object-position: 0% 55%;
+        -o-object-position: 0% 55%;
+           object-position: 0% 55%;
     }
 }
 

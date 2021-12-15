@@ -479,7 +479,7 @@ header {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0% 55%;
-     object-position: 0% 55%;
+  object-position: 0% 55%;
 }
 
 .new::after {

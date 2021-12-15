@@ -403,7 +403,7 @@ span {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0% 60%;
-     object-position: 0% 60%;
+  object-position: 0% 60%;
 }
 
 .delice img {
@@ -412,7 +412,7 @@ span {
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: 0% 70%;
-     object-position: 0% 70%;
+  object-position: 0% 70%;
 }
 
 .restos__menu-section {

@@ -128,7 +128,8 @@ span {
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-        object-position: 0% 60%;
+        -o-object-position: 0% 60%;
+           object-position: 0% 60%;
     }
 }
 
@@ -138,7 +139,8 @@ span {
         height: 100%;
         -o-object-fit: cover;
         object-fit: cover;
-        object-position: 0% 70%;
+        -o-object-position: 0% 70%;
+           object-position: 0% 70%;
     }
 }
 
