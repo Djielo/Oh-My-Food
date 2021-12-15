@@ -256,7 +256,9 @@ h1 {
 }
 
 h2 {
+  font-family: "Shrikhand", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 5.5vw;
+  font-weight: normal;
 }
 
 h3 {
@@ -542,6 +544,8 @@ span {
 
 .restos__button .btn-first:hover {
   opacity: 0.9;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
+          box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
 }
 
 @media only screen and (min-width: 750.1px) {

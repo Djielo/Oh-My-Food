@@ -320,6 +320,8 @@ header {
 
 .reserver .btn-first:hover {
   opacity: 0.9;
+  -webkit-box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
+          box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
 }
 
 @media only screen and (min-width: 750.1px) {

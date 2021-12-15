@@ -40,7 +40,7 @@
         height: 6.8vw;
 
         .header__logo {
-            margin: 1.8vw 0;
+            margin: 1.8vw 0 0 0;
             font-size: 3.5vw;
             font-weight: normal;
         }
@@ -201,11 +201,11 @@
 @media only screen and (min-width: 992.1px) {
     /* HEADER */
     .header {
-        height: 5vw;
+        height: 4vw;
 
         .header__logo {
             font-size: 2vw;
-            padding: 1vw 0;
+            margin: 1vw 0;
         }
     }
 
