@@ -27,7 +27,7 @@
           justify-content: space-between;
 }
 
-.restos__cards .cards__validation, .loading, .loader {
+.restos__cards .cards__validation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@
           justify-content: space-between;
 }
 
-.restos__cards .cards__validation, .loading, .loader {
+.restos__cards .cards__validation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,6 +88,7 @@
 /* FOOTER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
+  /* Déplacement de bas en haut (Y) */
   from {
     -webkit-transform: translateY(5vw);
             transform: translateY(5vw);
@@ -100,6 +101,7 @@
   }
 }
 @keyframes slideup {
+  /* Déplacement de bas en haut (Y) */
   from {
     -webkit-transform: translateY(5vw);
             transform: translateY(5vw);
@@ -113,6 +115,7 @@
 }
 
 @-webkit-keyframes slideup-left {
+  /* Déplacement de gauche à droite (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(-10vw, 10vw);
             transform: translate(-10vw, 10vw);
@@ -126,6 +129,7 @@
 }
 
 @keyframes slideup-left {
+  /* Déplacement de gauche à droite (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(-10vw, 10vw);
             transform: translate(-10vw, 10vw);
@@ -139,6 +143,7 @@
 }
 
 @-webkit-keyframes slideup-right {
+  /* Déplacement de droite à gauche (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(10vw, 10vw);
             transform: translate(10vw, 10vw);
@@ -152,6 +157,7 @@
 }
 
 @keyframes slideup-right {
+  /* Déplacement de droite à gauche (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(10vw, 10vw);
             transform: translate(10vw, 10vw);
@@ -166,23 +172,30 @@
 
 /* ANIMATION LOADER */
 @-webkit-keyframes wait {
+  /* Permet de délimiter le début et la fin de l'apparition */
   0% {
     visibility: hidden;
+    /* cache le loader jusqu'à ce qu'il soit appelé */
   }
   100% {
     visibility: hidden;
+    /* Fait disparaitre le loader une fois le temps écoulé */
   }
 }
 @keyframes wait {
+  /* Permet de délimiter le début et la fin de l'apparition */
   0% {
     visibility: hidden;
+    /* cache le loader jusqu'à ce qu'il soit appelé */
   }
   100% {
     visibility: hidden;
+    /* Fait disparaitre le loader une fois le temps écoulé */
   }
 }
 
 @-webkit-keyframes scale {
+  /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
   0% {
     color: #99e2d0;
     text-shadow: 0 0 0.7vw #9556dc;
@@ -204,6 +217,7 @@
 }
 
 @keyframes scale {
+  /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
   0% {
     color: #99e2d0;
     text-shadow: 0 0 0.7vw #9556dc;
@@ -352,17 +366,41 @@ span {
   right: 7.667vw;
   font-size: 6.4vw;
   cursor: pointer;
-  color: black;
+  padding-right: 1px;
   font-weight: 100;
   -webkit-transform-origin: center;
           transform-origin: center;
+  /* point d'origine de la transformation */
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+  /* type et temps de transformation  (ease = regular) */
+}
+
+.restos__title .restos__header .fa-heart::after {
+  content: "\f004";
+  /* Reprend le coeur font-awesome solide */
+  position: absolute;
+  /* en position absolute (devant les autres éléments par défaut) et centré (0, 0, 0, 0) */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-clip: text;
+  /* pour que l'arrière-plan soit visible au survol grâce à :hover::after opacity: 1 */
+  -webkit-background-clip: text;
+  color: transparent;
+  /* pour que la couleur du coeur vide devienne transparente et fasse apparaitre la couleur d'arrière-plan (bg-img gradient) */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+  font-weight: 900;
+  opacity: 0;
   -webkit-transition: opacity ease 0.4s;
   transition: opacity ease 0.4s;
 }
 
 .restos__title .restos__header .fa-heart:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   font-weight: 300;
   background-clip: text;
   color: transparent;
@@ -373,28 +411,6 @@ span {
 
 .restos__title .restos__header .fa-heart:hover::after {
   opacity: 1;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
-.restos__title .restos__header .fa-heart::after {
-  content: "\f004";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
-  background-image: linear-gradient(#9556dc, #ff79da);
-  font-weight: 900;
-  opacity: 0;
-  -webkit-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
 }
 
 .francaise img {
@@ -596,6 +612,17 @@ footer {
   padding: 6.4vw;
 }
 
+footer a {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+footer a:hover {
+  color: #9556dc;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 footer h1 {
   font-size: 4.833vw;
   font-weight: normal;
@@ -706,72 +733,5 @@ footer a {
 
 footer p {
   font-size: 4.267vw;
-}
-
-/* LOADER */
-.loading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(153, 226, 208, 0.8);
-  width: 100%;
-  height: 100%;
-  -webkit-animation: wait 5s 3s infinite;
-  animation: wait 5s 3s infinite;
-}
-
-.loader {
-  width: 15vw;
-  height: 15vw;
-  -webkit-animation-name: wait;
-  animation-name: wait;
-}
-
-.letter {
-  font-size: 10vw;
-  font-weight: normal;
-  color: #99e2d0;
-  -webkit-animation: scale 1.4s linear infinite;
-  animation: scale 1.4s linear infinite;
-}
-
-.letter:nth-child(1) {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.letter:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.letter:nth-child(3) {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.letter:nth-child(4) {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.letter:nth-child(5) {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.letter:nth-child(6) {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.letter:nth-child(7) {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-
-.letter:nth-child(8) {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
 }
 /*# sourceMappingURL=restos.css.map */

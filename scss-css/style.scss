@@ -281,22 +281,24 @@ footer {
     background-color: rgba(153, 226, 208, 0.8); /* BGC avec opacité */
     width: 100%;
     height: 100%;
-    -webkit-animation: wait 5s 3s infinite;
-    animation: wait 5s 3s infinite; /* Appel de l'animation wait pour une durée de 3s */
+    -webkit-animation: wait 1s 3s infinite;
+    animation: wait 1s 3s infinite; /* Appel de l'animation wait pour une durée de 3s avec un délai de 1s */
 }
 
 .loader {
-    @extend %df-jcc-aic; /* Pour que l'animation soit à l'horizontale */
+    @extend %df-jcc-aic; /* Pour que les lettres (enfant) soient à l'horizontale */
     width: 15vw;
     height: 15vw;
+    -webkit-animation-name: wait;
+    animation-name: wait; /*  */
 }
 
-.letter {
-    font-size: 10vw;
+.letter { /* Application de l'animation lettre après lettre */
+    font-size: 10vw; /* Taille du texte avant animation */
     font-weight: normal;
-    color: $tertiary;
+    color: $tertiary; /* Couleur du texte avant animation */
     -webkit-animation: scale 1.4s linear infinite;
-    animation: scale 1.4s linear infinite; /* Zoom sur chaque lettre de façon régulière */
+    animation: scale 1.4s linear infinite; /* Appel de l'animation: Zoom et coloration sur chaque lettre de façon régulière et indéfinie (Le temps de chargement de la page... Défini ici dans .loading) */
 
     &:nth-child(1) {
         -webkit-animation-delay: 0.1s;

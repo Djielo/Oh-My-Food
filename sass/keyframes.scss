@@ -2,7 +2,7 @@
 
 /* ANIMATIONS SUR CARDS */
 
-@keyframes slideup {
+@keyframes slideup { /* Déplacement de bas en haut (Y) */
     from {
         transform: translateY(5vw);
         opacity: 0.5;
@@ -13,7 +13,7 @@
     }
 }
 
-@keyframes slideup-left {
+@keyframes slideup-left { /* Déplacement de gauche à droite (X) et  de bas en haut (Y)*/
     from {
         transform: translate(-10vw, 10vw);
         opacity: 0;
@@ -24,7 +24,7 @@
     }
 }
 
-@keyframes slideup-right {
+@keyframes slideup-right { /* Déplacement de droite à gauche (X) et  de bas en haut (Y)*/
     from {
         transform: translate(10vw, 10vw);
         opacity: 0;
@@ -37,7 +37,16 @@
 
 /* ANIMATION LOADER */
 
-@keyframes scale {
+@keyframes wait { /* Permet de délimiter le début et la fin de l'apparition */
+    0% {
+        visibility: hidden; /* cache le loader jusqu'à ce qu'il soit appelé */
+    }
+    100% {
+        visibility: hidden; /* Fait disparaitre le loader une fois le temps écoulé */
+    }
+}
+
+@keyframes scale { /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
     0% {
         color: $tertiary;
         text-shadow: 0 0 0.7vw $primary;

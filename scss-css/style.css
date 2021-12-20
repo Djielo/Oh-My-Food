@@ -78,6 +78,7 @@
 /* FOOTER */
 /* ANIMATIONS SUR CARDS */
 @-webkit-keyframes slideup {
+  /* Déplacement de bas en haut (Y) */
   from {
     -webkit-transform: translateY(5vw);
             transform: translateY(5vw);
@@ -90,6 +91,7 @@
   }
 }
 @keyframes slideup {
+  /* Déplacement de bas en haut (Y) */
   from {
     -webkit-transform: translateY(5vw);
             transform: translateY(5vw);
@@ -103,6 +105,7 @@
 }
 
 @-webkit-keyframes slideup-left {
+  /* Déplacement de gauche à droite (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(-10vw, 10vw);
             transform: translate(-10vw, 10vw);
@@ -116,6 +119,7 @@
 }
 
 @keyframes slideup-left {
+  /* Déplacement de gauche à droite (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(-10vw, 10vw);
             transform: translate(-10vw, 10vw);
@@ -129,6 +133,7 @@
 }
 
 @-webkit-keyframes slideup-right {
+  /* Déplacement de droite à gauche (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(10vw, 10vw);
             transform: translate(10vw, 10vw);
@@ -142,6 +147,7 @@
 }
 
 @keyframes slideup-right {
+  /* Déplacement de droite à gauche (X) et  de bas en haut (Y)*/
   from {
     -webkit-transform: translate(10vw, 10vw);
             transform: translate(10vw, 10vw);
@@ -155,7 +161,31 @@
 }
 
 /* ANIMATION LOADER */
+@-webkit-keyframes wait {
+  /* Permet de délimiter le début et la fin de l'apparition */
+  0% {
+    visibility: hidden;
+    /* cache le loader jusqu'à ce qu'il soit appelé */
+  }
+  100% {
+    visibility: hidden;
+    /* Fait disparaitre le loader une fois le temps écoulé */
+  }
+}
+@keyframes wait {
+  /* Permet de délimiter le début et la fin de l'apparition */
+  0% {
+    visibility: hidden;
+    /* cache le loader jusqu'à ce qu'il soit appelé */
+  }
+  100% {
+    visibility: hidden;
+    /* Fait disparaitre le loader une fois le temps écoulé */
+  }
+}
+
 @-webkit-keyframes scale {
+  /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
   0% {
     color: #99e2d0;
     text-shadow: 0 0 0.7vw #9556dc;
@@ -175,7 +205,9 @@
     text-shadow: 0 0 0.7vw #ff79da;
   }
 }
+
 @keyframes scale {
+  /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
   0% {
     color: #99e2d0;
     text-shadow: 0 0 0.7vw #9556dc;
@@ -494,17 +526,41 @@ header {
   right: 6.667vw;
   font-size: 6.4vw;
   cursor: pointer;
-  color: black;
+  padding-right: 1px;
   font-weight: 100;
   -webkit-transform-origin: center;
           transform-origin: center;
+  /* point d'origine de la transformation */
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+  /* type et temps de transformation  (ease = regular) */
+}
+
+.fa-heart::after {
+  content: "\f004";
+  /* Reprend le coeur font-awesome solide */
+  position: absolute;
+  /* en position absolute (devant les autres éléments par défaut) et centré (0, 0, 0, 0) */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-clip: text;
+  /* pour que l'arrière-plan soit visible au survol grâce à :hover::after opacity: 1 */
+  -webkit-background-clip: text;
+  color: transparent;
+  /* pour que la couleur du coeur vide devienne transparente et fasse apparaitre la couleur d'arrière-plan (bg-img gradient) */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+  font-weight: 900;
+  opacity: 0;
   -webkit-transition: opacity ease 0.4s;
   transition: opacity ease 0.4s;
 }
 
 .fa-heart:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   font-weight: 300;
   background-clip: text;
   color: transparent;
@@ -515,28 +571,6 @@ header {
 
 .fa-heart:hover::after {
   opacity: 1;
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
-}
-
-.fa-heart::after {
-  content: "\f004";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
-  background-image: linear-gradient(#9556dc, #ff79da);
-  font-weight: 900;
-  opacity: 0;
-  -webkit-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
 }
 
 /* FOOTER */
@@ -544,6 +578,17 @@ footer {
   background: #353535;
   color: white;
   padding: 6.4vw;
+}
+
+footer a {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+footer a:hover {
+  color: #9556dc;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 footer h1 {
@@ -665,24 +710,30 @@ footer a {
   /* BGC avec opacité */
   width: 100%;
   height: 100%;
-  -webkit-animation: wait 5s 3s infinite;
-  animation: wait 5s 3s infinite;
-  /* Appel de l'animation wait pour une durée de 3s */
+  -webkit-animation: wait 1s 3s infinite;
+  animation: wait 1s 3s infinite;
+  /* Appel de l'animation wait pour une durée de 3s avec un délai de 1s */
 }
 
 .loader {
-  /* Pour que l'animation soit à l'horizontale */
+  /* Pour que les lettres (enfant) soient à l'horizontale */
   width: 15vw;
   height: 15vw;
+  -webkit-animation-name: wait;
+  animation-name: wait;
+  /*  */
 }
 
 .letter {
+  /* Application de l'animation lettre après lettre */
   font-size: 10vw;
+  /* Taille du texte avant animation */
   font-weight: normal;
   color: #99e2d0;
+  /* Couleur du texte avant animation */
   -webkit-animation: scale 1.4s linear infinite;
   animation: scale 1.4s linear infinite;
-  /* Zoom sur chaque lettre de façon régulière */
+  /* Appel de l'animation: Zoom et coloration sur chaque lettre de façon régulière et indéfinie (Le temps de chargement de la page... Défini ici dans .loading) */
 }
 
 .letter:nth-child(1) {

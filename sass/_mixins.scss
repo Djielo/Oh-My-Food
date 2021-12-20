@@ -8,12 +8,27 @@
 
 @mixin heart {
     cursor: pointer;
-    color: black;
+    padding-right: 1px;
     font-weight: 100;
-    transform-origin: center;
-    transition: opacity ease 0.4s;
+    transform-origin: center; /* point d'origine de la transformation */
+    transition: opacity ease 0.4s; /* type et temps de transformation  (ease = regular) */
+    &::after {
+        content: "\f004"; /* Reprend le coeur font-awesome solide */
+        position: absolute; /* en position absolute (devant les autres éléments par défaut) et centré (0, 0, 0, 0) */
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform-origin: center;
+        background-clip: text; /* pour que l'arrière-plan soit visible au survol grâce à :hover::after opacity: 1 */
+        -webkit-background-clip: text;
+        color: transparent; /* pour que la couleur du coeur vide devienne transparente et fasse apparaitre la couleur d'arrière-plan (bg-img gradient) */
+        background-image: linear-gradient($primary, $secondary);
+        font-weight: 900;
+        opacity: 0;
+        transition: opacity ease 0.4s;
+    }
     &:hover {
-        transform: scale(1.01);
         font-weight: 300;
         background-clip: text;
         color: transparent;
@@ -21,24 +36,7 @@
         background-image: linear-gradient($primary, $secondary);
         &::after {
             opacity: 1;
-            transform: scale(1.01);
         }
-    }
-    &::after {
-        content: "\f004";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        transform-origin: center;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: linear-gradient($primary, $secondary);
-        font-weight: 900;
-        opacity: 0;
-        transition: opacity ease 0.4s;
     }
 }
 
@@ -81,6 +79,15 @@
     background: #353535;
     color: white;
     padding: 6.4vw;
+
+    a {
+        transition: 0.6s;
+    }
+
+    a:hover {
+        color: $primary;
+        transition: 0.6s;
+    }
 
     h1 {
         font-size: 4.833vw;
