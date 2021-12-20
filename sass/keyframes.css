@@ -77,23 +77,6 @@
 }
 
 /* ANIMATION LOADER */
-@-webkit-keyframes wait {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes wait {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-
 @-webkit-keyframes scale {
   0% {
     color: #99e2d0;
@@ -114,7 +97,6 @@
     text-shadow: 0 0 0.7vw #ff79da;
   }
 }
-
 @keyframes scale {
   0% {
     color: #99e2d0;

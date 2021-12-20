@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .restaurants__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,23 +155,6 @@
 }
 
 /* ANIMATION LOADER */
-@-webkit-keyframes wait {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-@keyframes wait {
-  0% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
-
 @-webkit-keyframes scale {
   0% {
     color: #99e2d0;
@@ -191,7 +175,6 @@
     text-shadow: 0 0 0.7vw #ff79da;
   }
 }
-
 @keyframes scale {
   0% {
     color: #99e2d0;
@@ -674,20 +657,23 @@ footer a {
 /* LOADER */
 .loading {
   position: fixed;
+  /* pour que le loader reste en place en haut à gauche avec top et left 0 */
   top: 0;
   left: 0;
+  /* Pour que l'naimation soit au centre de la page */
   background-color: rgba(153, 226, 208, 0.8);
+  /* BGC avec opacité */
   width: 100%;
   height: 100%;
   -webkit-animation: wait 5s 3s infinite;
   animation: wait 5s 3s infinite;
+  /* Appel de l'animation wait pour une durée de 3s */
 }
 
 .loader {
+  /* Pour que l'animation soit à l'horizontale */
   width: 15vw;
   height: 15vw;
-  -webkit-animation-name: wait;
-  animation-name: wait;
 }
 
 .letter {
@@ -696,6 +682,7 @@ footer a {
   color: #99e2d0;
   -webkit-animation: scale 1.4s linear infinite;
   animation: scale 1.4s linear infinite;
+  /* Zoom sur chaque lettre de façon régulière */
 }
 
 .letter:nth-child(1) {

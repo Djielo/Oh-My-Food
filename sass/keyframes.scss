@@ -37,15 +37,6 @@
 
 /* ANIMATION LOADER */
 
-@keyframes wait {
-    0% {
-        visibility: hidden;
-    }
-    100% {
-        visibility: hidden;
-    }
-}
-
 @keyframes scale {
     0% {
         color: $tertiary;
