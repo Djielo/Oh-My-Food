@@ -239,7 +239,7 @@ span {
     }
 
     &:hover .fa-check-circle {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
 }
 
