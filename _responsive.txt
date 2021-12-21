@@ -1,7 +1,0 @@
-$medium: 750px !default;
-$large: 1000px !default;
-
-$medium-up: "only screen and (min-width: #{$medium})";
-$medium-down: "only screen and (max-width: #{$medium})";
-$larger-up: "only screen and (min-width: #{$large})";
-$larger-down: "only screen and (max-width: #{$large})";
