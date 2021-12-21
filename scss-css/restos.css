@@ -477,7 +477,7 @@ span {
 }
 
 .restos__cards .cards__title {
-  width: 70%;
+  width: 90%;
   white-space: nowrap;
   /*évite le retour à la ligne */
   overflow: hidden;
@@ -526,22 +526,22 @@ span {
   width: 16%;
   background: #99e2d0;
   color: white;
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
 }
 
 .restos__cards:hover .cards__validation {
-  -webkit-transition-duration: .6s;
-          transition-duration: .6s;
+  -webkit-transition-duration: 0.6s;
+          transition-duration: 0.6s;
   margin-right: 0;
 }
 
 .restos__cards .fa-check-circle {
   font-size: 5.3vw;
-  -webkit-transition: -webkit-transform .8s;
-  transition: -webkit-transform .8s;
-  transition: transform .8s;
-  transition: transform .8s, -webkit-transform .8s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
 .restos__cards:hover .fa-check-circle {
