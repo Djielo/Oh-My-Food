@@ -362,7 +362,7 @@ span {
   z-index: 1;
   font-weight: normal;
   position: absolute;
-  top: 6vw;
+  top: 7.2vw;
   right: 7.667vw;
   font-size: 6.4vw;
   cursor: pointer;
@@ -507,7 +507,10 @@ span {
   text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 15%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 17%;
   padding-top: 7.5vw;
 }
 
@@ -520,25 +523,25 @@ span {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: -16%;
-  width: 15%;
+  width: 16%;
   background: #99e2d0;
   color: white;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
 }
 
 .restos__cards:hover .cards__validation {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
   margin-right: 0;
 }
 
 .restos__cards .fa-check-circle {
   font-size: 5.3vw;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
 }
 
 .restos__cards:hover .fa-check-circle {

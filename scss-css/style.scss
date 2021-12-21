@@ -139,29 +139,29 @@ header {
     &:hover .fas {
         color: $primary;
     }
-}
 
-.number {
-    position: absolute;
-    height: 6.4vw;
-    width: 6.4vw;
-    color: white;
-    background-color: $primary;
-    border-radius: 50%;
-    top: middle;
-    left: 0;
-    transform: translate(-50%, 0);
-    @extend %df-jcc-aic;
-    font-weight: normal;
-}
+    .number {
+        position: absolute;
+        height: 6.4vw;
+        width: 6.4vw;
+        color: white;
+        background-color: $primary;
+        border-radius: 50%;
+        top: middle;
+        left: 0;
+        transform: translate(-50%, 0);
+        @extend %df-jcc-aic;
+        font-weight: normal;
+    }
 
-.fa-mobile-alt,
-.fa-list-ul,
-.fa-store {
-    position: absolute;
-    left: 11.733vw;
-    font-size: 5.6vw;
-    color: #7e7e7e;
+    .fa-mobile-alt,
+    .fa-list-ul,
+    .fa-store {
+        position: absolute;
+        left: 8vw;
+        font-size: 5.6vw;
+        color: #7e7e7e;
+    }
 }
 
 /* SECTION RESTAURANTS */
@@ -197,6 +197,14 @@ header {
         transition: box-shadow 0.5s;
         box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
     }
+
+    .fa-heart {
+        position: absolute;
+        bottom: 4vw;
+        right: 8vw;
+        font-size: 5vw;
+        @include heart;
+    }
 }
 
 .restocard__h3 {
@@ -208,7 +216,6 @@ header {
 }
 
 .restocard__img {
-    position: relative;
     height: 100%;
     width: 100%;
     border-radius: 5.333vw 5.333vw 0 0;
@@ -230,11 +237,13 @@ header {
         -o-object-fit: cover;
         object-fit: cover;
         -o-object-position: 0% 55%;
-           object-position: 0% 55%;
+        object-position: 0% 55%;
     }
 }
 
 .new {
+    position: relative;
+
     &::after {
         position: absolute;
         content: "Nouveau";
@@ -255,14 +264,6 @@ header {
     height: 37%;
     flex-grow: 1;
     margin: 1.333vw 0;
-}
-
-.fa-heart {
-    position: absolute;
-    bottom: 8vw;
-    right: 6.667vw;
-    font-size: 6.4vw;
-    @include heart;
 }
 
 /* FOOTER */
@@ -293,7 +294,8 @@ footer {
     animation-name: wait; /*  */
 }
 
-.letter { /* Application de l'animation lettre après lettre */
+.letter {
+    /* Application de l'animation lettre après lettre */
     font-size: 10vw; /* Taille du texte avant animation */
     font-weight: normal;
     color: $tertiary; /* Couleur du texte avant animation */

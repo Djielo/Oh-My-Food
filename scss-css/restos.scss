@@ -114,7 +114,7 @@ span {
             z-index: 1;
             font-weight: normal;
             position: absolute;
-            top: 6vw;
+            top: 7.2vw;
             right: 7.667vw;
             font-size: 6.4vw;
             @include heart;
@@ -208,7 +208,8 @@ span {
     .cards__price {
         text-align: center;
         flex-shrink: 0;
-        width: 15%;
+        flex-grow: 1;
+        width: 17%;
         padding-top: 7.5vw;
 
         span {
@@ -221,20 +222,20 @@ span {
         @extend %df-jcc-aic;
         flex-shrink: 0;
         margin-right: -16%;
-        width: 15%;
+        width: 16%;
         background: #99e2d0;
         color: white;
-        transition-duration: 1s;
+        transition-duration: .6s;
     }
 
     &:hover .cards__validation {
-        transition-duration: 1s;
+        transition-duration: .6s;
         margin-right: 0;
     }
 
     .fa-check-circle {
         font-size: 5.3vw;
-        transition: transform 1s;
+        transition: transform .8s;
     }
 
     &:hover .fa-check-circle {

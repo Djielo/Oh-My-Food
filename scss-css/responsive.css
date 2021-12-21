@@ -250,16 +250,16 @@
     font-size: 2.2vw;
     padding-left: 4vw;
   }
-  .number {
+  .fonctionnement__magnet .number {
     height: 3vw;
     width: 3vw;
     font-size: 1.6vw;
   }
-  .fa-mobile-alt,
-  .fa-list-ul,
-  .fa-store {
-    left: 4vw;
-    font-size: 2.8vw;
+  .fonctionnement__magnet .fa-mobile-alt,
+  .fonctionnement__magnet .fa-list-ul,
+  .fonctionnement__magnet .fa-store {
+    left: 3.5vw;
+    font-size: 2.6vw;
   }
   /* SECTION RESTAURANTS */
   .restaurants__section {
@@ -299,6 +299,11 @@
     height: 25.2vw;
     border-radius: 4.333vw;
   }
+  .restaurants__card .fa-heart {
+    bottom: 2vw;
+    right: 4vw;
+    font-size: 3vw;
+  }
   .restocard__h3 {
     margin: 0 0 0.8vw 3.333vw;
   }
@@ -329,11 +334,6 @@
     height: -moz-max-content;
     height: max-content;
     margin: 1.6vw 0;
-  }
-  .fa-heart {
-    bottom: 2vw;
-    right: 4vw;
-    font-size: 3vw;
   }
   /* FOOTER == Idem Mobile */
   /* LOADER == Idem Mobile */
@@ -423,16 +423,16 @@
     font-size: 1.6vw;
     padding-left: 4vw;
   }
-  .fonctionnement__section .number {
+  .fonctionnement__section .fonctionnement__magnet .number {
     height: 3vw;
     width: 3vw;
     font-size: 1.6vw;
   }
-  .fonctionnement__section .fa-mobile-alt,
-  .fonctionnement__section .fa-list-ul,
-  .fonctionnement__section .fa-store {
-    left: 2.6vw;
-    font-size: 1.8vw;
+  .fonctionnement__section .fonctionnement__magnet .fa-mobile-alt,
+  .fonctionnement__section .fonctionnement__magnet .fa-list-ul,
+  .fonctionnement__section .fonctionnement__magnet .fa-store {
+    left: 2.8vw;
+    font-size: 2vw;
   }
   /* SECTION RESTAURANTS */
   .restaurants__section {
@@ -459,6 +459,11 @@
   .restaurants__card {
     height: 20vw;
     border-radius: 3.333vw;
+  }
+  .restaurants__card .fa-heart {
+    bottom: 1.3vw;
+    right: 4vw;
+    font-size: 2vw;
   }
   .restocard__h3 {
     margin: 0 0 0.6vw 3.333vw;
@@ -491,11 +496,6 @@
     height: -moz-max-content;
     height: max-content;
     margin: 0.6vw 0;
-  }
-  .fa-heart {
-    bottom: 1.3vw;
-    right: 4vw;
-    font-size: 2vw;
   }
 }
 
@@ -541,7 +541,7 @@
     margin: 3vw 0 1vw 0;
   }
   .restos__title .restos__header .fa-heart {
-    top: 3vw;
+    top: 4vw;
     right: 8vw;
     font-size: 3.5vw;
   }
@@ -577,7 +577,7 @@
   }
   .restos__cards .cards__title h3 {
     margin: 1.3vw 0 0 4vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   .restos__cards .cards__title p {
     font-size: 2vw;
@@ -585,7 +585,7 @@
   }
   .restos__cards .cards__price {
     font-size: 2vw;
-    padding-top: 5.7vw;
+    padding-top: 5vw;
   }
   .restos__cards .cards__validation .fas {
     font-size: 3.5vw;
@@ -650,7 +650,7 @@
     width: 33%;
     gap: 1vw;
     gap: 1.2vw;
-    margin-bottom: 0vw;
+    margin-bottom: 0;
   }
   .restos__menu h3 {
     font-size: 1.2vw;
@@ -688,7 +688,7 @@
     width: 5vw;
   }
   .restos__cards .cards__validation .fas {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
   .restos__button .btn-first {
     margin: 3vw 0 4vw 0;

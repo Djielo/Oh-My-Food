@@ -22,7 +22,7 @@
           align-items: center;
 }
 
-.position, .fonctionnement__magnet, .number, .loading, .loader {
+.position, .fonctionnement__magnet, .fonctionnement__magnet .number, .loading, .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +57,7 @@
           align-items: center;
 }
 
-.position, .fonctionnement__magnet, .number, .loading, .loader {
+.position, .fonctionnement__magnet, .fonctionnement__magnet .number, .loading, .loader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +398,7 @@ header {
   color: #9556dc;
 }
 
-.number {
+.fonctionnement__magnet .number {
   position: absolute;
   height: 6.4vw;
   width: 6.4vw;
@@ -412,11 +412,11 @@ header {
   font-weight: normal;
 }
 
-.fa-mobile-alt,
-.fa-list-ul,
-.fa-store {
+.fonctionnement__magnet .fa-mobile-alt,
+.fonctionnement__magnet .fa-list-ul,
+.fonctionnement__magnet .fa-store {
   position: absolute;
-  left: 11.733vw;
+  left: 8vw;
   font-size: 5.6vw;
   color: #7e7e7e;
 }
@@ -463,6 +463,59 @@ header {
           box-shadow: 0 10px 20px 1px rgba(192, 192, 192, 0.99);
 }
 
+.restaurants__card .fa-heart {
+  position: absolute;
+  bottom: 4vw;
+  right: 8vw;
+  font-size: 5vw;
+  cursor: pointer;
+  padding-right: 1px;
+  font-weight: 100;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  /* point d'origine de la transformation */
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+  /* type et temps de transformation  (ease = regular) */
+}
+
+.restaurants__card .fa-heart::after {
+  content: "\f004";
+  /* Reprend le coeur font-awesome solide */
+  position: absolute;
+  /* en position absolute (devant les autres éléments par défaut) et centré (0, 0, 0, 0) */
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  background-clip: text;
+  /* pour que l'arrière-plan soit visible au survol grâce à :hover::after opacity: 1 */
+  -webkit-background-clip: text;
+  color: transparent;
+  /* pour que la couleur du coeur vide devienne transparente et fasse apparaitre la couleur d'arrière-plan (bg-img gradient) */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+  font-weight: 900;
+  opacity: 0;
+  -webkit-transition: opacity ease 0.4s;
+  transition: opacity ease 0.4s;
+}
+
+.restaurants__card .fa-heart:hover {
+  font-weight: 300;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
+  background-image: linear-gradient(#9556dc, #ff79da);
+}
+
+.restaurants__card .fa-heart:hover::after {
+  opacity: 1;
+}
+
 .restocard__h3 {
   margin: 2.667vw 0 1.333vw 3.333vw;
 }
@@ -472,7 +525,6 @@ header {
 }
 
 .restocard__img {
-  position: relative;
   height: 100%;
   width: 100%;
   border-radius: 5.333vw 5.333vw 0 0;
@@ -497,6 +549,10 @@ header {
   object-position: 0% 55%;
 }
 
+.new {
+  position: relative;
+}
+
 .new::after {
   position: absolute;
   content: "Nouveau";
@@ -518,59 +574,6 @@ header {
       -ms-flex-positive: 1;
           flex-grow: 1;
   margin: 1.333vw 0;
-}
-
-.fa-heart {
-  position: absolute;
-  bottom: 8vw;
-  right: 6.667vw;
-  font-size: 6.4vw;
-  cursor: pointer;
-  padding-right: 1px;
-  font-weight: 100;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  /* point d'origine de la transformation */
-  -webkit-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
-  /* type et temps de transformation  (ease = regular) */
-}
-
-.fa-heart::after {
-  content: "\f004";
-  /* Reprend le coeur font-awesome solide */
-  position: absolute;
-  /* en position absolute (devant les autres éléments par défaut) et centré (0, 0, 0, 0) */
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  background-clip: text;
-  /* pour que l'arrière-plan soit visible au survol grâce à :hover::after opacity: 1 */
-  -webkit-background-clip: text;
-  color: transparent;
-  /* pour que la couleur du coeur vide devienne transparente et fasse apparaitre la couleur d'arrière-plan (bg-img gradient) */
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
-  background-image: linear-gradient(#9556dc, #ff79da);
-  font-weight: 900;
-  opacity: 0;
-  -webkit-transition: opacity ease 0.4s;
-  transition: opacity ease 0.4s;
-}
-
-.fa-heart:hover {
-  font-weight: 300;
-  background-clip: text;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9556dc), to(#ff79da));
-  background-image: linear-gradient(#9556dc, #ff79da);
-}
-
-.fa-heart:hover::after {
-  opacity: 1;
 }
 
 /* FOOTER */

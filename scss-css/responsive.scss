@@ -108,19 +108,19 @@
             font-size: 2.2vw;
             padding-left: 4vw;
         }
-    }
 
-    .number {
-        height: 3vw;
-        width: 3vw;
-        font-size: 1.6vw;
-    }
+        .number {
+            height: 3vw;
+            width: 3vw;
+            font-size: 1.6vw;
+        }
 
-    .fa-mobile-alt,
-    .fa-list-ul,
-    .fa-store {
-        left: 4vw;
-        font-size: 2.8vw;
+        .fa-mobile-alt,
+        .fa-list-ul,
+        .fa-store {
+            left: 3.5vw;
+            font-size: 2.6vw;
+        }
     }
 
     /* SECTION RESTAURANTS */
@@ -149,6 +149,12 @@
     .restaurants__card {
         height: 25.2vw;
         border-radius: 4.333vw;
+
+        .fa-heart {
+            bottom: 2vw;
+            right: 4vw;
+            font-size: 3vw;
+        }
     }
 
     .restocard__h3 {
@@ -182,12 +188,6 @@
         height: -moz-max-content;
         height: max-content;
         margin: 1.6vw 0;
-    }
-
-    .fa-heart {
-        bottom: 2vw;
-        right: 4vw;
-        font-size: 3vw;
     }
 
     /* FOOTER == Idem Mobile */
@@ -282,19 +282,19 @@
                 font-size: 1.6vw;
                 padding-left: 4vw;
             }
-        }
 
-        .number {
-            height: 3vw;
-            width: 3vw;
-            font-size: 1.6vw;
-        }
+            .number {
+                height: 3vw;
+                width: 3vw;
+                font-size: 1.6vw;
+            }
 
-        .fa-mobile-alt,
-        .fa-list-ul,
-        .fa-store {
-            left: 2.6vw;
-            font-size: 1.8vw;
+            .fa-mobile-alt,
+            .fa-list-ul,
+            .fa-store {
+                left: 2.8vw;
+                font-size: 2vw;
+            }
         }
     }
 
@@ -321,6 +321,12 @@
     .restaurants__card {
         height: 20vw;
         border-radius: 3.333vw;
+
+        .fa-heart {
+            bottom: 1.3vw;
+            right: 4vw;
+            font-size: 2vw;
+        }
     }
 
     .restocard__h3 {
@@ -355,12 +361,6 @@
         height: -moz-max-content;
         height: max-content;
         margin: 0.6vw 0;
-    }
-
-    .fa-heart {
-        bottom: 1.3vw;
-        right: 4vw;
-        font-size: 2vw;
     }
 }
 
@@ -413,7 +413,7 @@
             }
 
             .fa-heart {
-                top: 3vw;
+                top: 4vw;
                 right: 8vw;
                 font-size: 3.5vw;
             }
@@ -450,7 +450,7 @@
         .cards__title {
             h3 {
                 margin: 1.3vw 0 0 4vw;
-                font-size: 3vw;
+                font-size: 2.5vw;
             }
 
             p {
@@ -461,7 +461,7 @@
 
         .cards__price {
             font-size: 2vw;
-            padding-top: 5.7vw;
+            padding-top: 5vw;
         }
 
         .cards__validation {
@@ -550,7 +550,7 @@
             font-size: 1.2vw;
         }
         gap: 1.2vw;
-        margin-bottom: 0vw;
+        margin-bottom: 0;
     }
 
     .restos__serving {
@@ -593,7 +593,7 @@
             width: 5vw;
 
             .fas {
-                font-size: 2vw;
+                font-size: 1.8vw;
             }
         }
     }
