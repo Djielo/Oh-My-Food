@@ -14,10 +14,16 @@
     }
 }
 
+html {
+    background-color: rgba(153, 226, 208, 0.3);    
+}
+
 body {
     font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-    margin: 0 auto;
+    margin: 2vw auto;
     font-weight: normal;
+    background-color: #fff;
+    max-width: 1440px;
 }
 
 a {
@@ -179,7 +185,7 @@ span {
     height: 14vw;
     border-radius: 4.4vw;
     box-shadow: -0.4vw 0.667vw 4vw -0.667vw rgba(204, 204, 204, 0.99);
-    overflow: hidden; /* cache la div contenant le check */
+    overflow: hidden;
 
     &:hover {
         cursor: pointer;
@@ -187,21 +193,21 @@ span {
 
     .cards__title {
         width: 90%;
-        white-space: nowrap; /*évite le retour à la ligne */
-        overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
+        white-space: nowrap;
+        overflow: hidden;
 
         h3 {
             font-size: 4vw;
             margin: 2vw 0 0 3vw;
             font-weight: bold;
-            overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
-            text-overflow: ellipsis; /*fait apparaitre les ...*/
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         p {
             font-size: 3.4vw;
             margin: 1vw 0 0 3vw;
-            overflow: hidden; /*efface le texte au fur et à mesure qu'on passe dessus*/
-            text-overflow: ellipsis; /*fait apparaitre les ...*/
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
@@ -209,7 +215,7 @@ span {
         text-align: center;
         flex-shrink: 0;
         flex-grow: 1;
-        width: 17%;
+        width: 15%;
         padding-top: 7.5vw;
 
         span {
@@ -221,8 +227,8 @@ span {
     .cards__validation {
         @extend %df-jcc-aic;
         flex-shrink: 0;
-        margin-right: -16%;
-        width: 16%;
+        margin-right: -15%;
+        width: 15%;
         background: #99e2d0;
         color: white;
         transition-duration: 0.6s;

@@ -14,10 +14,16 @@
     }
 }
 
+html {
+    background-color: rgba(153, 226, 208, 0.3);    
+}
+
 body {
     font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-    margin: 0 auto;
+    margin: 2vw auto;
     font-weight: normal;
+    background-color: #fff;
+    max-width: 1440px;
 }
 
 a {
@@ -56,12 +62,13 @@ span {
 /* HEADER */
 
 header {
-    height: 12.8vw;
+    height: 16vw;
 }
 
 .header__logo {
     text-align: center;
-    margin: 3.333vw 0 0 0;
+    padding-top: 3.2vw;
+    margin: 1.333vw 0 0 0;
     font-weight: normal;
 }
 
@@ -147,7 +154,7 @@ header {
         color: white;
         background-color: $primary;
         border-radius: 50%;
-        top: middle;
+        top: auto;
         left: 0;
         transform: translate(-50%, 0);
         @extend %df-jcc-aic;
@@ -282,14 +289,12 @@ footer {
     background-color: rgba(153, 226, 208, 0.8); /* BGC avec opacité */
     width: 100%;
     height: 100%;
-    -webkit-animation: wait 1s 3s infinite;
-    animation: wait 1s 3s infinite; /* Appel de l'animation wait pour une durée de 3s avec un délai de 1s */
+    -webkit-animation: wait 1s 4s infinite;
+    animation: wait 1s 4s infinite; /* Appel de l'animation wait pour une durée de 3s avec un délai de 1s */
 }
 
 .loader {
     @extend %df-jcc-aic; /* Pour que les lettres (enfant) soient à l'horizontale */
-    width: 15vw;
-    height: 15vw;
     -webkit-animation-name: wait;
     animation-name: wait; /*  */
 }
