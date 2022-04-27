@@ -719,7 +719,7 @@ footer a {
   /* pour que le loader reste en place en haut à gauche avec top et left 0 */
   top: 0;
   left: 0;
-  /* Pour que l'naimation soit au centre de la page */
+  /* Pour que l'animation soit au centre de la page */
   background-color: rgba(153, 226, 208, 0.8);
   /* BGC avec opacité */
   width: 100%;

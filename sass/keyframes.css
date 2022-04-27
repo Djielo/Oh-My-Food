@@ -128,26 +128,4 @@
     text-shadow: 0 0 0.7vw #ff79da;
   }
 }
-
-@keyframes scale {
-  /* C'est l'animation en elle-même... Gère le zoom et la colorisation sur chaque élément enfant de la class .letter */
-  0% {
-    color: #99e2d0;
-    text-shadow: 0 0 0.7vw #9556dc;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
-  }
-  50% {
-    color: #ff79da;
-    text-shadow: 0 0 0.7vw #99e2d0;
-    -webkit-transform: translateY(-1.5vw);
-            transform: translateY(-1.5vw);
-  }
-  100% {
-    color: #9556dc;
-    text-shadow: 0 0 0.7vw #ff79da;
-  }
-}
 /*# sourceMappingURL=keyframes.css.map */
